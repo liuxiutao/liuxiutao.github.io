@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liuxiutao.github.io/"/>
-  <updated>2019-04-30T10:40:22.882Z</updated>
+  <updated>2019-04-30T13:37:11.602Z</updated>
   <id>https://liuxiutao.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>STL简介</title>
+    <link href="https://liuxiutao.github.io/2019/04/30/STL%E7%AE%80%E4%BB%8B/"/>
+    <id>https://liuxiutao.github.io/2019/04/30/STL简介/</id>
+    <published>2019-04-30T11:10:08.000Z</published>
+    <updated>2019-04-30T13:37:11.602Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;STL（Standard Template Library）标准模板库的简称，是由惠普开发的一系列软件的总称，STL现在是C++的一部分，已经被构建于编译系统之内，所以不需要再引入。&lt;/p&gt;
+&lt;h2 id=&quot;STL的组成部分&quot;&gt;&lt;a href=&quot;#STL的组成部分&quot; cla
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="https://liuxiutao.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="C++" scheme="https://liuxiutao.github.io/tags/C/"/>
+    
+      <category term="STL" scheme="https://liuxiutao.github.io/tags/STL/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo搭建博客操作</title>
     <link href="https://liuxiutao.github.io/2019/04/28/hello-world/"/>
     <id>https://liuxiutao.github.io/2019/04/28/hello-world/</id>
     <published>2019-04-28T08:47:50.326Z</published>
-    <updated>2019-04-30T10:40:22.882Z</updated>
+    <updated>2019-04-30T12:05:05.138Z</updated>
     
     <summary type="html">
     

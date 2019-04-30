@@ -98,7 +98,7 @@
 <meta property="og:site_name" content="LiuTao's Blog">
 <meta property="og:description" content="搭建步骤 安装node.js和git 安装Hexo  1$ npm install -g hexo-cli  建站  1234$ hexo init &amp;lt;folder&amp;gt;$ cd &amp;lt;folder&amp;gt;$ npm install$ hexo s  // 本地运行，通过浏览器预览  新建博文  123$ hexo new &quot;My New Post&quot;$ hexo clean$ hexo">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-30T10:40:22.882Z">
+<meta property="og:updated_time" content="2019-04-30T12:05:05.138Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo搭建博客操作">
 <meta name="twitter:description" content="搭建步骤 安装node.js和git 安装Hexo  1$ npm install -g hexo-cli  建站  1234$ hexo init &amp;lt;folder&amp;gt;$ cd &amp;lt;folder&amp;gt;$ npm install$ hexo s  // 本地运行，通过浏览器预览  新建博文  123$ hexo new &quot;My New Post&quot;$ hexo clean$ hexo">
@@ -2088,7 +2088,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f4ffaa;
+  background: #5345cc;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3286,6 +3286,54 @@ pre .javascript .function {
 .headband {
   height: 3px;
   background: #333;
+}
+i.fa.fa-heart {
+  color: #f55e5e;
+}
+a.post-tag {
+  background: #ececec;
+  border-radius: 3px 0 0 3px;
+  color: #52768e;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 0.5rem 0.6rem 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  border-bottom: 0px solid #999;
+}
+.post-tag::before {
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.25);
+  box-shadow: inset 0 1px rgba(0,0,0,0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+.post-tag::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #ececec;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.post-tag:hover,
+.post-tag.active {
+  background-color: #c76c0c;
+  color: #fff;
+}
+.post-tag:hover::after,
+.post-tag.active::after {
+  border-left-color: #c76c0c;
 }</style><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&amp;subset=latin,latin-ext"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"></noscript></head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -3490,7 +3538,7 @@ pre .javascript .function {
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-04-30T18:40:22+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-04-30T20:05:05+08:00">
                 2019-04-30
               </time>
             
@@ -3631,7 +3679,7 @@ pre .javascript .function {
         <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
   <div>如果觉得写得还不错就请支持我吧！</div>
   <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-    <span>打赏</span>
+    <span>赏</span>
   </button>
   <div id="QR" style="display: none;">
 
@@ -3676,9 +3724,13 @@ pre .javascript .function {
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+            <a class="post-tag" href="/tags/Hexo/" rel="tag">
+              Hexo
+            </a>
           
-            <a href="/tags/NexT/" rel="tag"># NexT</a>
+            <a class="post-tag" href="/tags/NexT/" rel="tag">
+              NexT
+            </a>
           
         </div>
       
@@ -3687,6 +3739,22 @@ pre .javascript .function {
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/30/STL简介/" rel="prev" title="STL简介">
+                STL简介 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -3758,7 +3826,7 @@ pre .javascript .function {
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -3780,7 +3848,7 @@ pre .javascript .function {
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

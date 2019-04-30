@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[STL简介]]></title>
+    <url>%2F2019%2F04%2F30%2FSTL%E7%AE%80%E4%BB%8B%2F</url>
+    <content type="text"><![CDATA[STL（Standard Template Library）标准模板库的简称，是由惠普开发的一系列软件的总称，STL现在是C++的一部分，已经被构建于编译系统之内，所以不需要再引入。 STL的组成部分 容器（containers）：是一种数据结构容器，使用类模板的方式提供，我们可以方便的进行数据的存储操作。 适配器（adapters）：以序列式容器为基础，提供的栈，队列和优先级队列的这种容器。 迭代器（iterators）：类似于指针，用来操作容器的对象。 算法（algorithm）：包含一系列的常见算法。 空间配置器（allocator）：其中主要工作包括两部分：1、对象的创建与销毁。2、内存的创建与释放。 仿函数（functor）：仿函数又称为函数对象，其实就是重载了()操作符的struct，没有什么特别的地方。 容器 序列式容器：每个元素都有固定位置，取决于插入时机和地点。与元素值无关。 vector（向量）：底层数据结构是数组，可以随机存取数据元素（用索引直接存取），数组的尾部添加和移除元素很快，但在头部和中部插入元素比较耗时。 deque（双端队列）：底层数据结构是数组，可以随机存取数据元素，在数组的头部和尾部插入和删除元素很快。 list（列表）：底层数据结构是双向链表，不提供随机存取数据元素（需要按顺序走到要存取的元素），在任何位置插入和删除都很快，只需要简单的移动一下指针。 forward_list：单向链表 array：固定大小的数组 string：字符串 关联式容器：元素位置取决于特定的排序准则，和插入的顺序无关，底层数据结构为二叉树。 set（集合）：内部元素依据其值自动排序，set内相同的数值元素只能出现一次。 multiset（多重集合）：内部元素依据其值自动排序，set内允许出现重复的元素。 map（映射）：map的元素是成对的键值对，内部元素的值依据键自动排序，键只允许出现一次。 multimap（多重映射）：多重映射是map的增强版，内部元素的值依据键自动排序，允许键出现多次。 bitset 无序的关联式容器，使用hash函数来组织元素 unordered_set unordered_map unordered_multiset unordered_multimap 适配器STL提供了三种适配器stack，queue和priority_queue。这些适配器是包装了序列式容器（vector，deque，list）中的一种。因此所谓的适配器就是序列式容器的包装器，注意：适配器没有提供迭代器。 stack（栈）：栈可以使用序列式容器中的vector，deque，list中的任意一种作为其底层的数据结构。默认是使用deque来实现的stack。 queue（队列）：队列可以使用deque和list中的任意一种作为其底层的数据结构。默认是使用deque来实现的queue。 priority_queue（优先队列）：优先队列也是一种队列，不过在进入队列之后会对元素进行排序，可以使用vector和deque来实现其底层结构，默认是使用vector来实现priority_queue。 名称 底层数据结构 查询速度 插入和删除的速度 序列式容器 vector（向量） 数组 快 尾部插入删除快，其他慢 deque（双端队列） 数组 快 头尾插入删除快，其他慢 list（列表） 链表 慢 任何位置插入删除都很快 容器适配器 stack（栈） deque（默认） ~ ~ queue（队列） deque（默认） ~ ~ priority_queue（优先队列） vector（默认） ~ ~ 关联式容器 set（集合） 二叉树 很快 ~ multiset（多重集合） 二叉树 很快 ~ map（映射） 二叉树 很快 ~ multimap（多重映射） 二叉树 很快 ~ 迭代器迭代器(Iterator)是指针(pointer)的泛化，它允许程序员以相同的方式处理不同的数据结构(容器)。STL中有五种类型的迭代器，它们分别满足一定的要求。不同的迭代器要求定义的操作不一样。 输入迭代器(Input iterator) 输出迭代器(Output iterator) 前向迭代器(Forward iterator) 双向迭代器(Bidirectional iterator) 随机访问迭代器(Random access iterator) 各个迭代器之间的功能关系如下图所示，越往下越丰富 input output \ / forward | bidirectional | random access]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>STL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo搭建博客操作]]></title>
     <url>%2F2019%2F04%2F28%2Fhello-world%2F</url>
     <content type="text"><![CDATA[搭建步骤 安装node.js和git 安装Hexo 1$ npm install -g hexo-cli 建站 1234$ hexo init &lt;folder&gt;$ cd &lt;folder&gt;$ npm install$ hexo s // 本地运行，通过浏览器预览 新建博文 123$ hexo new "My New Post"$ hexo clean$ hexo generate 部署到远端站点 编辑站点配置文件_config.yml 123456#Deployment#Docs: https://hexo.io/docs/deployment.htmldeploy: type: git repo: https://github.com/liuxiutao/liuxiutao.github.io.git branch: master 部署 1$ Hexo deploy NexT主题 下载主题 1$ git clone https://github.com/theme-next/hexo-theme-next themes/next/ 修改主题配置文件配置主题 常用命令 新建博文 1$ hexo new "My New Post" 更多信息: Writing 本地运行服务 1$ hexo server More info: Server 调试模式 1$ hexo s --debug 清空历史记录 1$ hexo clean 生成静态文件 1$ hexo generate More info: Generating 部署到远端站点 1$ hexo deploy More info: Deployment 新建分类页面 1$ hexo new page categories]]></content>
