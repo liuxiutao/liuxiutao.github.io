@@ -1935,7 +1935,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7ff7b5;
+  background: #d65533;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3116,4 +3116,21 @@ pre .javascript .function {
 }
 #instantclick {
   display: none;
+}
+.site-title {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 36px;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Kunstler Script', 'Harlow Solid', 'Edwardian Script ITC', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+.site-meta {
+  padding: 20px 0;
+  color: #fff;
+  background: #333;
+}
+.headband {
+  height: 3px;
+  background: #333;
 }
