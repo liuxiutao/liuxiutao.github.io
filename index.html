@@ -1383,9 +1383,6 @@ pre .javascript .function {
   -o-transform: rotate(30deg);
   transform: rotate(30deg);
 }
-.posts-expand {
-  padding-top: 40px;
-}
 @media (max-width: 767px) {
   .posts-expand {
     margin: 0 20px;
@@ -1621,7 +1618,7 @@ pre .javascript .function {
   font-size: 16px;
 }
 .posts-expand .post-meta {
-  margin: 3px 0 60px 0;
+  margin: 3px 0 20px 0;
   color: #999;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
@@ -1755,14 +1752,12 @@ pre .javascript .function {
   background: #ccc;
   text-align: center;
 }
-.post:last-child .post-eof.post-eof.post-eof {
-  display: none;
-}
 .post-gallery {
   display: table;
   table-layout: fixed;
   width: 100%;
   border-collapse: separate;
+  margin: 0 0 20px 0;
 }
 .post-gallery-row {
   display: table-row;
@@ -2086,7 +2081,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5345cc;
+  background: #e03dff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2103,7 +2098,7 @@ pre .javascript .function {
   list-style: none;
 }
 .links-of-blogroll-item {
-  padding: 2px 10px;
+  padding: 8px 10px;
 }
 .sidebar-nav {
   margin: 0 0 20px;
@@ -3276,15 +3271,6 @@ pre .javascript .function {
   font-weight: bold;
   font-family: 'Kunstler Script', 'Harlow Solid', 'Edwardian Script ITC', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
-.site-meta {
-  padding: 20px 0;
-  color: #fff;
-  background: #333;
-}
-.headband {
-  height: 3px;
-  background: #333;
-}
 i.fa.fa-heart {
   color: #f55e5e;
 }
@@ -3332,6 +3318,98 @@ a.post-tag {
 .post-tag:hover::after,
 .post-tag.active::after {
   border-left-color: #c76c0c;
+}
+.posts-expand .post-eof {
+  display: block;
+  margin: 20px auto 10px;
+  width: 8%;
+  height: 0px;
+  background: #ccc;
+  text-align: center;
+}
+.links-of-blogroll-item {
+  padding: 4px 20px;
+}
+body {
+  background: url("/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  line-height: 1.7;
+}
+.content-wrap {
+  background-color: rgba(255,255,255,0.8);
+  min-height: 848px;
+}
+.post {
+  background-color: rgba(255,255,255,0.95);
+  margin-bottom: 40px;
+  padding: 45px 25px 25px 25px;
+}
+.post:last-child {
+  margin-bottom: 0px;
+}
+.footer {
+  background-color: rgba(255,255,255,0.85);
+  line-height: 1.5;
+}
+.links-of-author-item {
+  margin: 5px 0 0;
+  width: 50%;
+  text-align: center;
+}
+.site-meta {
+  padding: 20px 0;
+  color: #fff;
+  background: #101a50;
+}
+.headband {
+  height: 3px;
+  background: #101a50;
+}
+.category-all-page .category-list-count {
+  color: #e63838;
+}
+.category-all-page .category-list-item {
+  margin: 5px 10px;
+  font-size: 20px;
+}
+.posts-collapse .post-title {
+  margin-left: 60px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: inherit;
+}
+.posts-collapse .post {
+  padding: 20px 20px 20px 30px;
+  margin: 10px 0;
+}
+.posts-collapse .collection-title {
+  position: relative;
+  margin: 30px 0 20px 0;
+}
+.posts-collapse::after {
+  background: #e2dede;
+}
+.page-archive .posts-collapse .archive-move-on {
+  background: #333;
+  border: 1px solid #b9b7b7;
+}
+.posts-collapse .collection-title::before {
+  background: #aaa;
+}
+.main {
+  padding-bottom: 125px;
+  word-wrap: break-word;
+}
+p {
+  margin-bottom: 10px;
+}
+.highlight {
+  margin: 10px 0;
 }</style><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&amp;subset=latin,latin-ext"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"></noscript></head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -3493,7 +3571,7 @@ a.post-tag {
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://liuxiutao.github.io/2019/04/30/STL简介/">
+    <link itemprop="mainEntityOfPage" href="https://liuxiutao.github.io/2019/05/STL队列/">
 
     <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="刘韬">
@@ -3512,7 +3590,7 @@ a.post-tag {
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/30/STL简介/" itemprop="url">STL简介</a></h1>
+                <a class="post-title-link" href="/2019/05/STL队列/" itemprop="url">STL队列</a></h1>
         
 
         <div class="post-meta">
@@ -3524,8 +3602,8 @@ a.post-tag {
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-30T19:10:08+08:00">
-                2019-04-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-02T15:51:15+08:00">
+                2019-05-02
               </time>
             
 
@@ -3540,8 +3618,8 @@ a.post-tag {
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-04-30T21:37:11+08:00">
-                2019-04-30
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-02T15:54:57+08:00">
+                2019-05-02
               </time>
             
           </span>
@@ -3594,17 +3672,29 @@ a.post-tag {
 
       
       
+        <div class="post-gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
+          
+          
+            <div class="post-gallery-row">
+              <a class="post-gallery-img fancybox" href="/2019/05/STL队列/STL队列.jpg" rel="gallery_cjv6i12wo0008rov0mzgmxh3l" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+                <img src="/2019/05/STL队列/STL队列.jpg" itemprop="contentUrl">
+              </a>
+            
+          
+
+          
+          </div>
+        </div>
+      
 
       
         
           
-          STL（Standard Template Library）标准模板库的简称，是由惠普开发的一系列软件的总称，STL现在是C++的一部分，已经被构建于编译系统之内，所以不需要再引入。
-STL的组成部分
-容器（containers）：是一种数据结构容器，使用类模板的方式提供，我们可以方便的进行数据的存
-          ...
+          
+          
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/30/STL简介/#more" rel="contents">
+            <a class="btn" href="/2019/05/STL队列/#more" rel="contents">
               阅读全文 »
             </a>
           </div>
@@ -3657,7 +3747,7 @@ STL的组成部分
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://liuxiutao.github.io/2019/04/28/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://liuxiutao.github.io/2019/05/STL向量/">
 
     <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="刘韬">
@@ -3676,7 +3766,7 @@ STL的组成部分
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/28/hello-world/" itemprop="url">Hexo搭建博客操作</a></h1>
+                <a class="post-title-link" href="/2019/05/STL向量/" itemprop="url">STL向量</a></h1>
         
 
         <div class="post-meta">
@@ -3688,8 +3778,8 @@ STL的组成部分
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-28T16:47:50+08:00">
-                2019-04-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-02T14:31:22+08:00">
+                2019-05-02
               </time>
             
 
@@ -3704,8 +3794,8 @@ STL的组成部分
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-04-30T20:05:05+08:00">
-                2019-04-30
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-02T18:20:08+08:00">
+                2019-05-02
               </time>
             
           </span>
@@ -3758,6 +3848,375 @@ STL的组成部分
 
       
       
+        <div class="post-gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
+          
+          
+            <div class="post-gallery-row">
+              <a class="post-gallery-img fancybox" href="/2019/05/STL向量/STL.jpg" rel="gallery_cjv6i12wj0006rov0u4p6pllk" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+                <img src="/2019/05/STL向量/STL.jpg" itemprop="contentUrl">
+              </a>
+            
+          
+
+          
+          </div>
+        </div>
+      
+
+      
+        
+          
+          头文件1#include &lt;vector&gt;
+声明及初始化12345678vector&lt;int&gt; vec; // 声明一个int型向量vector&lt;int&gt; vec(5); // 声明一个初始大小为5的int向量，向量元素执行默认初始化vector&lt;int&amp;g
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/05/STL向量/#more" rel="contents">
+              阅读全文 »
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liuxiutao.github.io/2019/04/STL简介/">
+
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘韬">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LiuTao's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/STL简介/" itemprop="url">STL简介</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-30T19:10:08+08:00">
+                2019-04-30
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-02T15:43:49+08:00">
+                2019-05-02
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+        <div class="post-gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
+          
+          
+            <div class="post-gallery-row">
+              <a class="post-gallery-img fancybox" href="/2019/04/STL简介/STL.jpg" rel="gallery_cjv6i12w50000rov09c171jj3" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+                <img src="/2019/04/STL简介/STL.jpg" itemprop="contentUrl">
+              </a>
+            
+          
+
+          
+          </div>
+        </div>
+      
+
+      
+        
+          
+          STL（Standard Template Library）标准模板库的简称，是由惠普开发的一系列软件的总称，STL现在是C++的一部分，已经被构建于编译系统之内，所以不需要再引入。
+STL的组成部分
+容器（containers）：是一种数据结构容器，使用类模板的方式提供，我们可以方便的进行数据的存
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/STL简介/#more" rel="contents">
+              阅读全文 »
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liuxiutao.github.io/2019/04/hello-world/">
+
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘韬">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LiuTao's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/hello-world/" itemprop="url">Hexo搭建博客操作</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-28T16:47:50+08:00">
+                2019-04-28
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-02T17:34:34+08:00">
+                2019-05-02
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+        <div class="post-gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
+          
+          
+            <div class="post-gallery-row">
+              <a class="post-gallery-img fancybox" href="/2019/04/hello-world/hello-world.jpg" rel="gallery_cjv6i12wd0002rov0ovexcwct" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+                <img src="/2019/04/hello-world/hello-world.jpg" itemprop="contentUrl">
+              </a>
+            
+          
+
+          
+          </div>
+        </div>
+      
 
       
         
@@ -3765,16 +4224,16 @@ STL的组成部分
           搭建步骤
 安装node.js和git
 安装Hexo
- 1$ npm install -g hexo-cli
+1$ npm install -g hexo-cli
 
 建站
- 1234$ hexo init &lt;folder&gt;$ cd &lt;folder&gt;$ npm install$ hexo s  // 本地运行，通过浏览器预览
+1234$ hexo init &lt;folder&gt;$ cd &lt;folder&gt;$ npm install$ hexo s  // 本地运行，通过浏览器预览
 
-新建
+新建博文
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/04/28/hello-world/#more" rel="contents">
+            <a class="btn" href="/2019/04/hello-world/#more" rel="contents">
               阅读全文 »
             </a>
           </div>
@@ -3858,7 +4317,7 @@ STL的组成部分
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -3976,6 +4435,9 @@ STL的组成部分
 
 
 
+<div>
+  本站部分图片来源于网络，如有侵权请联系，本人会立即删除
+</div>
         
 <div class="busuanzi-count">
   <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -3999,6 +4461,9 @@ STL的组成部分
 
 
         
+      </div>
+      <div>
+        侵权请联系
       </div>
     </footer>
 

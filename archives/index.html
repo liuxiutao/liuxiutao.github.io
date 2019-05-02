@@ -1383,9 +1383,6 @@ pre .javascript .function {
   -o-transform: rotate(30deg);
   transform: rotate(30deg);
 }
-.posts-expand {
-  padding-top: 40px;
-}
 @media (max-width: 767px) {
   .posts-expand {
     margin: 0 20px;
@@ -1621,7 +1618,7 @@ pre .javascript .function {
   font-size: 16px;
 }
 .posts-expand .post-meta {
-  margin: 3px 0 60px 0;
+  margin: 3px 0 20px 0;
   color: #999;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
@@ -1755,14 +1752,12 @@ pre .javascript .function {
   background: #ccc;
   text-align: center;
 }
-.post:last-child .post-eof.post-eof.post-eof {
-  display: none;
-}
 .post-gallery {
   display: table;
   table-layout: fixed;
   width: 100%;
   border-collapse: separate;
+  margin: 0 0 20px 0;
 }
 .post-gallery-row {
   display: table-row;
@@ -2086,7 +2081,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5345cc;
+  background: #e03dff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2103,7 +2098,7 @@ pre .javascript .function {
   list-style: none;
 }
 .links-of-blogroll-item {
-  padding: 2px 10px;
+  padding: 8px 10px;
 }
 .sidebar-nav {
   margin: 0 0 20px;
@@ -3276,15 +3271,6 @@ pre .javascript .function {
   font-weight: bold;
   font-family: 'Kunstler Script', 'Harlow Solid', 'Edwardian Script ITC', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
-.site-meta {
-  padding: 20px 0;
-  color: #fff;
-  background: #333;
-}
-.headband {
-  height: 3px;
-  background: #333;
-}
 i.fa.fa-heart {
   color: #f55e5e;
 }
@@ -3332,6 +3318,98 @@ a.post-tag {
 .post-tag:hover::after,
 .post-tag.active::after {
   border-left-color: #c76c0c;
+}
+.posts-expand .post-eof {
+  display: block;
+  margin: 20px auto 10px;
+  width: 8%;
+  height: 0px;
+  background: #ccc;
+  text-align: center;
+}
+.links-of-blogroll-item {
+  padding: 4px 20px;
+}
+body {
+  background: url("/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  line-height: 1.7;
+}
+.content-wrap {
+  background-color: rgba(255,255,255,0.8);
+  min-height: 848px;
+}
+.post {
+  background-color: rgba(255,255,255,0.95);
+  margin-bottom: 40px;
+  padding: 45px 25px 25px 25px;
+}
+.post:last-child {
+  margin-bottom: 0px;
+}
+.footer {
+  background-color: rgba(255,255,255,0.85);
+  line-height: 1.5;
+}
+.links-of-author-item {
+  margin: 5px 0 0;
+  width: 50%;
+  text-align: center;
+}
+.site-meta {
+  padding: 20px 0;
+  color: #fff;
+  background: #101a50;
+}
+.headband {
+  height: 3px;
+  background: #101a50;
+}
+.category-all-page .category-list-count {
+  color: #e63838;
+}
+.category-all-page .category-list-item {
+  margin: 5px 10px;
+  font-size: 20px;
+}
+.posts-collapse .post-title {
+  margin-left: 60px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: inherit;
+}
+.posts-collapse .post {
+  padding: 20px 20px 20px 30px;
+  margin: 10px 0;
+}
+.posts-collapse .collection-title {
+  position: relative;
+  margin: 30px 0 20px 0;
+}
+.posts-collapse::after {
+  background: #e2dede;
+}
+.page-archive .posts-collapse .archive-move-on {
+  background: #333;
+  border: 1px solid #b9b7b7;
+}
+.posts-collapse .collection-title::before {
+  background: #aaa;
+}
+.main {
+  padding-bottom: 125px;
+  word-wrap: break-word;
+}
+p {
+  margin-bottom: 10px;
+}
+.highlight {
+  margin: 10px 0;
 }</style><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&amp;subset=latin,latin-ext"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"></noscript></head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -3490,7 +3568,7 @@ a.post-tag {
         
           
         
-        嗯..! 目前共计 2 篇日志。 继续努力。
+        嗯..! 目前共计 4 篇日志。 继续努力。
       </span>
 
       
@@ -3514,7 +3592,77 @@ a.post-tag {
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2019/04/30/STL简介/" itemprop="url">
+            <a class="post-title-link" href="/2019/05/STL队列/" itemprop="url">
+              
+                <span itemprop="name">STL队列</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-05-02T15:51:15+08:00" content="2019-05-02">
+          05-02
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+      
+
+        
+        
+        
+
+        
+        
+
+        
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2019/05/STL向量/" itemprop="url">
+              
+                <span itemprop="name">STL向量</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-05-02T14:31:22+08:00" content="2019-05-02">
+          05-02
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+      
+
+        
+        
+        
+
+        
+        
+
+        
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2019/04/STL简介/" itemprop="url">
               
                 <span itemprop="name">STL简介</span>
               
@@ -3549,7 +3697,7 @@ a.post-tag {
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2019/04/28/hello-world/" itemprop="url">
+            <a class="post-title-link" href="/2019/04/hello-world/" itemprop="url">
               
                 <span itemprop="name">Hexo搭建博客操作</span>
               
@@ -3619,7 +3767,7 @@ a.post-tag {
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -3737,6 +3885,9 @@ a.post-tag {
 
 
 
+<div>
+  本站部分图片来源于网络，如有侵权请联系，本人会立即删除
+</div>
         
 <div class="busuanzi-count">
   <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -3760,6 +3911,9 @@ a.post-tag {
 
 
         
+      </div>
+      <div>
+        侵权请联系
       </div>
     </footer>
 
