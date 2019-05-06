@@ -108,7 +108,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    sidebar: {"position":"right","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: true,
@@ -342,12 +342,12 @@ body {
   color: #555;
   background: #f5f7f9;
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   body {
     padding-right: 0 !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   body {
     padding-right: 0 !important;
   }
@@ -379,7 +379,7 @@ h6 {
 h1 {
   font-size: 22px;
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   h1 {
     font-size: 18px;
   }
@@ -387,7 +387,7 @@ h1 {
 h2 {
   font-size: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   h2 {
     font-size: 16px;
   }
@@ -395,7 +395,7 @@ h2 {
 h3 {
   font-size: 18px;
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   h3 {
     font-size: 14px;
   }
@@ -403,7 +403,7 @@ h3 {
 h4 {
   font-size: 16px;
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   h4 {
     font-size: 12px;
   }
@@ -411,7 +411,7 @@ h4 {
 h5 {
   font-size: 14px;
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   h5 {
     font-size: 10px;
   }
@@ -419,7 +419,7 @@ h5 {
 h6 {
   font-size: 12px;
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   h6 {
     font-size: 8px;
   }
@@ -787,7 +787,7 @@ pre .javascript .function {
   width: auto;
   margin: 20px auto;
 }
-@media (min-width: 992px) {
+@media (min-width: 800px) {
   .full-image.full-image.full-image {
     max-width: none;
     width: 118%;
@@ -1007,7 +1007,7 @@ pre .javascript .function {
   display: flex;
   margin-bottom: -1px;
 }
-@media (max-width: 413px) {
+@media (max-width: 400px) {
   .post-body .tabs ul.nav-tabs {
     display: block;
     margin-bottom: 5px;
@@ -1020,7 +1020,7 @@ pre .javascript .function {
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
 }
-@media (max-width: 413px) {
+@media (max-width: 400px) {
   .post-body .tabs ul.nav-tabs li.tab {
     margin: initial;
     border-top: 1px solid transparent;
@@ -1048,7 +1048,7 @@ pre .javascript .function {
   border-right: 1px solid #ddd;
   background-color: #fff;
 }
-@media (max-width: 413px) {
+@media (max-width: 400px) {
   .post-body .tabs ul.nav-tabs li.tab.active {
     border-top: 1px solid #ddd;
     border-left: 3px solid #fc6423;
@@ -1120,7 +1120,7 @@ pre .javascript .function {
   padding: 0 10px;
   line-height: 30px;
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .page-number-basic,
   .pagination .prev,
   .pagination .next,
@@ -1206,12 +1206,12 @@ pre .javascript .function {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .back-to-top {
     display: none !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .back-to-top {
     display: none !important;
   }
@@ -1233,7 +1233,7 @@ pre .javascript .function {
   margin: 0;
   text-align: center;
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .site-meta {
     text-align: center;
   }
@@ -1284,7 +1284,7 @@ pre .javascript .function {
   top: 10px;
   left: 10px;
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .site-nav-toggle {
     display: block;
   }
@@ -1295,7 +1295,7 @@ pre .javascript .function {
   background: transparent;
   border: none;
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .site-nav {
     display: none;
     margin: 0 -10px;
@@ -1304,12 +1304,12 @@ pre .javascript .function {
     border-top: 1px solid #ddd;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .site-nav {
     display: block !important;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 800px) {
   .site-nav {
     display: block !important;
   }
@@ -1352,7 +1352,7 @@ pre .javascript .function {
 .post-body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .post-body {
     word-break: break-word;
   }
@@ -1383,9 +1383,9 @@ pre .javascript .function {
   -o-transform: rotate(30deg);
   transform: rotate(30deg);
 }
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .posts-expand {
-    margin: 0 20px;
+    margin: 0 5px;
   }
   .post-body pre {
     padding: 10px;
@@ -1402,7 +1402,7 @@ pre .javascript .function {
     padding-right: 10px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 800px) {
   .posts-expand .post-body {
     text-align: justify;
   }
@@ -1478,7 +1478,7 @@ pre .javascript .function {
   background: #f5f5f5;
   z-index: -1;
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .posts-collapse {
     margin: 0 20px;
   }
@@ -1575,7 +1575,7 @@ pre .javascript .function {
   word-break: break-word;
   font-weight: 400;
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .posts-expand .post-title {
     font-size: 22px;
   }
@@ -1645,27 +1645,27 @@ pre .javascript .function {
 .post-meta-item-icon {
   margin-right: 3px;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .post-meta-item-icon {
     display: inline-block;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .post-meta-item-icon {
     display: inline-block;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .post-meta-item-text {
     display: none;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .post-meta-item-text {
     display: none;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .posts-expand .post-comments-count {
     display: none;
   }
@@ -1939,12 +1939,12 @@ pre .javascript .function {
 .sidebar a:hover {
   color: #eee;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .sidebar {
     display: none !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .sidebar {
     display: none !important;
   }
@@ -1968,12 +1968,12 @@ pre .javascript .function {
   cursor: pointer;
   -webkit-transform: translateZ(0);
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .sidebar-toggle {
     display: none !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .sidebar-toggle {
     display: none !important;
   }
@@ -2081,7 +2081,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2affff;
+  background: #9fff2f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2515,7 +2515,7 @@ pre .javascript .function {
   z-index: 9999;
   border-radius: 5px;
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .local-search-popup {
     padding: 0;
     top: 0;
@@ -2603,12 +2603,12 @@ pre .javascript .function {
   transform: translate(-50%, -50%);
   color: #ccc;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .busuanzi-count {
     width: auto;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .busuanzi-count {
     width: auto;
   }
@@ -2638,7 +2638,7 @@ pre .javascript .function {
   top: 3px;
   left: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .page-archive .archive-page-counter {
     top: 5px;
   }
@@ -2861,12 +2861,12 @@ pre .javascript .function {
   margin: 0 auto;
   width: 960px;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .header {
     width: auto;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .header {
     width: auto;
   }
@@ -2886,14 +2886,14 @@ pre .javascript .function {
     width: 240px;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .header-inner {
     position: relative;
     width: auto;
     border-radius: initial;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .header-inner {
     position: relative;
     width: auto;
@@ -2908,12 +2908,12 @@ pre .javascript .function {
 .main:after {
   clear: both;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .main {
     padding-bottom: 100px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .main {
     padding-bottom: 100px;
   }
@@ -2921,12 +2921,12 @@ pre .javascript .function {
 .container .main-inner {
   width: 960px;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .container .main-inner {
     width: auto;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .container .main-inner {
     width: auto;
   }
@@ -2941,14 +2941,14 @@ pre .javascript .function {
   box-shadow: initial;
   border-radius: initial;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .content-wrap {
     width: 100%;
     padding: 20px;
     border-radius: initial;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .content-wrap {
     width: 100%;
     padding: 20px;
@@ -2964,12 +2964,12 @@ pre .javascript .function {
   background: #f5f7f9;
   box-shadow: none;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .sidebar {
     display: none;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .sidebar {
     display: none;
   }
@@ -2981,14 +2981,14 @@ pre .javascript .function {
   width: 960px;
   padding-left: 260px;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .footer-inner {
     width: auto;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .footer-inner {
     width: auto;
     padding-left: 0 !important;
@@ -3016,12 +3016,12 @@ pre .javascript .function {
   color: #fff;
   background: #222;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .site-meta {
     box-shadow: 0 0 16px rgba(0,0,0,0.5);
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .site-meta {
     box-shadow: 0 0 16px rgba(0,0,0,0.5);
   }
@@ -3043,12 +3043,12 @@ pre .javascript .function {
 .site-nav {
   border-top: none;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .site-nav {
     display: none !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .site-nav-on {
     display: block !important;
   }
@@ -3100,7 +3100,7 @@ pre .javascript .function {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .site-nav-toggle {
     display: block;
   }
@@ -3238,9 +3238,148 @@ pre .javascript .function {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .post-body {
     text-align: justify;
+  }
+}
+body {
+  background: url("/images/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  line-height: 1.7;
+}
+.main {
+  padding-bottom: 125px;
+  word-wrap: break-word;
+}
+#instantclick {
+  display: none;
+}
+.header {
+  width: 100%;
+  background-color: rgba(255,255,255,0.9);
+}
+.headband {
+  height: 3px;
+  background: #101a50;
+}
+.container .header-inner {
+  width: 100%;
+  position: relative;
+  max-width: 960px;
+  background: rgba(255,255,255,0);
+}
+.site-brand-wrapper {
+  background-color: #fff;
+}
+@media (min-width: 801px) {
+  .site-brand-wrapper {
+    width: 240px;
+    float: left;
+  }
+}
+.site-meta {
+  padding: 10px 0;
+  background: rgba(255,255,255,0);
+}
+.site-title {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 24px;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #101a50;
+  font-family: 'Kunstler Script', 'Harlow Solid', 'Edwardian Script ITC', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+.site-subtitle {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #101a50;
+}
+@media (min-width: 801px) {
+  .site-nav {
+    margin-left: 260px;
+    margin-top: -9px;
+  }
+}
+@media (min-width: 801px) {
+  .menu {
+    margin-top: -13px;
+  }
+  .menu .menu-item {
+    width: 16.6%;
+    float: left;
+  }
+  .menu .menu-item a {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .menu .menu-item .fa {
+    margin-right: 0px;
+    font-size: 24px;
+  }
+  .menu-item-active a:after {
+    display: none;
+  }
+}
+.menu .menu-item a:hover {
+  background: #f9f9f9;
+  border-bottom-color: #fff;
+}
+.menu-item-active a {
+  background: unset;
+  color: #092ff7;
+}
+@media (max-width: 800px) {
+  .menu-item-ico {
+    float: left;
+  }
+  .nemu-item-name {
+    float: right;
+  }
+  .site-meta {
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+  }
+}
+.btn-bar {
+  background-color: #333;
+}
+.sidebar {
+  position: absolute;
+  margin-top: 96px;
+}
+.links-of-blogroll-item {
+  padding: 4px 20px;
+}
+.links-of-author-item {
+  margin: 5px 0 0;
+  width: 50%;
+  text-align: center;
+}
+.container .main-inner {
+  width: 100%;
+  max-width: 960px;
+  overflow: hidden;
+}
+.content-wrap {
+  background-color: rgba(255,255,255,0);
+  padding: 20px 0px 0px 0px;
+  min-height: 600px;
+}
+@media (min-width: 801px) {
+  .content-wrap {
+    background-color: rgba(255,255,255,0);
+    padding: 20px 0px 0px 0px;
+    min-height: 600px;
+    margin-right: -260px;
+    width: 100%;
+  }
+  div#content {
+    margin-right: 260px;
   }
 }
 .post {
@@ -3249,6 +3388,19 @@ pre .javascript .function {
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.page {
+  background-color: rgba(255,255,255,0.9);
+  min-height: 600px;
+  padding: 40px 20px 20px 20px;
+}
+.post {
+  background-color: rgba(255,255,255,0.9);
+  margin-bottom: 40px;
+  padding: 45px 25px 25px 25px;
+}
+.post:last-child {
+  margin-bottom: 0px;
 }
 .post-body p a {
   color: #0593d3;
@@ -3259,20 +3411,6 @@ pre .javascript .function {
   color: #fc6423;
   border-bottom: none;
   border-bottom: 1px solid #fc6423;
-}
-#instantclick {
-  display: none;
-}
-.site-title {
-  display: inline-block;
-  vertical-align: top;
-  line-height: 36px;
-  font-size: 28px;
-  font-weight: bold;
-  font-family: 'Kunstler Script', 'Harlow Solid', 'Edwardian Script ITC', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-}
-i.fa.fa-heart {
-  color: #f55e5e;
 }
 a.post-tag {
   background: #ececec;
@@ -3327,46 +3465,11 @@ a.post-tag {
   background: #ccc;
   text-align: center;
 }
-.links-of-blogroll-item {
-  padding: 4px 20px;
+p {
+  margin-bottom: 10px;
 }
-body {
-  background: url("/images/bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  line-height: 1.7;
-}
-.content-wrap {
-  background-color: rgba(255,255,255,0.8);
-  min-height: 848px;
-}
-.post {
-  background-color: rgba(255,255,255,0.95);
-  margin-bottom: 40px;
-  padding: 45px 25px 25px 25px;
-}
-.post:last-child {
-  margin-bottom: 0px;
-}
-.footer {
-  background-color: rgba(255,255,255,0.85);
-  line-height: 1.5;
-}
-.links-of-author-item {
-  margin: 5px 0 0;
-  width: 50%;
-  text-align: center;
-}
-.site-meta {
-  padding: 20px 0;
-  color: #fff;
-  background: #101a50;
-}
-.headband {
-  height: 3px;
-  background: #101a50;
+.highlight {
+  margin: 10px 0;
 }
 .category-all-page .category-list-count {
   color: #e63838;
@@ -3383,6 +3486,11 @@ body {
   font-weight: normal;
   line-height: inherit;
 }
+.posts-collapse {
+  margin-left: 50px;
+  margin-right: 40px;
+  margin-top: 20px;
+}
 .posts-collapse .post {
   padding: 20px 20px 20px 30px;
   margin: 10px 0;
@@ -3392,24 +3500,39 @@ body {
   margin: 30px 0 20px 0;
 }
 .posts-collapse::after {
-  background: #e2dede;
+  background: rgba(255,255,255,0.9);
+}
+.category-all-page .category-list {
+  margin-left: 40px;
 }
 .page-archive .posts-collapse .archive-move-on {
-  background: #333;
-  border: 1px solid #b9b7b7;
+  background: #fff;
+  border: 1px solid #fff;
+  opacity: 1;
+}
+.page-archive .archive-page-counter {
+  color: #fff;
+  font-size: 16px;
 }
 .posts-collapse .collection-title::before {
-  background: #aaa;
+  background-color: #fff;
 }
-.main {
-  padding-bottom: 125px;
-  word-wrap: break-word;
+.archive-year {
+  color: #fff;
 }
-p {
-  margin-bottom: 10px;
+.comments {
+  margin: 0 0 0 0;
 }
-.highlight {
-  margin: 10px 0;
+.footer {
+  background-color: rgba(255,255,255,0.85);
+  line-height: 1.5;
+  color: #555;
+}
+.footer .footer-inner {
+  margin: 10px auto;
+}
+i.fa.fa-heart {
+  color: #f55e5e;
 }</style><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&amp;subset=latin,latin-ext"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"></noscript></head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -3419,7 +3542,7 @@ p {
     
   
 
-  <div class="container sidebar-position-right  ">
+  <div class="container sidebar-position-left  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -3458,50 +3581,70 @@ p {
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <div class="menu-item-ico">
+                <i class="menu-item-icon fa fa-fw fa-home"></i> 
+              </div> 
             
-            首页
-          </a>
+            <div class="menu-item-name">
+              首页
+            <div>
+          </div></div></a>
         </li>
       
         
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <div class="menu-item-ico">
+                <i class="menu-item-icon fa fa-fw fa-th"></i> 
+              </div> 
             
-            分类
-          </a>
+            <div class="menu-item-name">
+              分类
+            <div>
+          </div></div></a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <div class="menu-item-ico">
+                <i class="menu-item-icon fa fa-fw fa-archive"></i> 
+              </div> 
             
-            归档
-          </a>
+            <div class="menu-item-name">
+              归档
+            <div>
+          </div></div></a>
         </li>
       
         
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <div class="menu-item-ico">
+                <i class="menu-item-icon fa fa-fw fa-tags"></i> 
+              </div> 
             
-            标签
-          </a>
+            <div class="menu-item-name">
+              标签
+            <div>
+          </div></div></a>
         </li>
       
         
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <div class="menu-item-ico">
+                <i class="menu-item-icon fa fa-fw fa-user"></i> 
+              </div> 
             
-            关于
-          </a>
+            <div class="menu-item-name">
+              关于
+            <div>
+          </div></div></a>
         </li>
       
 
@@ -3511,9 +3654,14 @@ p {
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+              <div class="menu-item-ico">
+                <i class="menu-item-icon fa fa-search fa-fw"></i>
+              </div> 
+              
             
-            搜索
+            <div class="menu-item-name">
+              搜索
+            </div>
           </a>
         </li>
       
@@ -3621,7 +3769,7 @@ p {
     </div>
   </div>
 
-  <aside id="sidebar" class="sidebar">
+  <aside id="sidebar" class="sidebar" style="margin-top: 0">
     
     <div class="sidebar-inner">
 
@@ -3642,7 +3790,7 @@ p {
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -3653,7 +3801,7 @@ p {
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -3664,7 +3812,7 @@ p {
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -3761,7 +3909,7 @@ p {
 
 
 <div>
-  本站部分图片来源于网络，如有侵权请联系，本人会立即删除
+  本站部分图片来源于网络，如有侵权，请联系本人删除
 </div>
         
 <div class="busuanzi-count">

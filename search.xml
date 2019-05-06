@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[人生最美是清欢]]></title>
+    <url>%2F2019%2F05%2F%E4%BA%BA%E7%94%9F%E6%9C%80%E7%BE%8E%E6%98%AF%E6%B8%85%E6%AC%A2%2F</url>
+    <content type="text"><![CDATA[人间有味，最是清欢细雨斜风作小寒，淡烟疏柳媚晴滩，入淮清洛渐漫漫。雪沫乳花浮午盏，蓼茸篙笋试春盘，人间有味是清欢。 ——苏轼 人生只似风前絮，欢也零星，悲也零星，都做连江点点萍。 ——王国维 山中何所有？领上多白云。只可自怡悦，不堪持赠君。 天寒翠袖薄，日暮倚修竹。 怎么向从来没见过雪的人描述雪？ 我们要知道雪，只有自己到有雪的国度；我们要听到黄莺的歌声，就要坐到有黄莺的树下；我们要问夜来香的清气，只有夜晚走到有花的庭院。 雪，冷面清明，纯净优美，念念不往，在某一层次上，像极了我们的心。 活在当下，自在宁静山有多高，月就有多小；云有多重，愁就有多深；而夕阳 夕阳就只有一寸 我们为了太多紧急的事，只好牺牲看来不甚紧急的事，例如为了加班，牺牲应有的睡眠；为了业绩牺牲吃饭时间；为了应酬，不能陪家人散步，为了谋取职位，不能与朋友喝茶。确实，紧急的事不能不做，奈何人生里紧急的事无穷无尽，我们的一生大半的在紧急的应付中度过，到最后整个生活步调都变得很紧急了。 一个人如果在一天里花了八个小时在追逐衣食与俗世上，是不是也能画八十分钟来思考重要的事情呢？如若不行，就从八分钟开始。 天寒露重，望君保重风来疏竹，风过而竹不留声；雁渡寒潭，雁去而潭不留影。故君子事来而心始现，事去而心随空。 爱的开始是一个眼色，爱的最后是无限的苍穹 简单 而有丰沛的爱平常 而有深刻的心 岁月静好，随遇而安温柔半两，从容一生正视每一个眼前的生活历程，努力地活在当下，对这一阶段的人生与情感用心珍惜。 在被造谣时，我不着急，因为我有自知之明；在被误解时，我不着急，因为我有自觉之道；在被毁谤时，我不着急，因为我有自爱之方；在被打击时，我不着急，因为我有自愉之法。 生命的一切成长，都需要时间。 生命的幸福原来不在于人的环境、人的地位、人所能享受的物质，而在于人的心灵如何与生活应对。 我们幸福的感受不全然是世界所给予的，而是来自我们对外在或者内在的价值判断。我们幸福与否，正是由自我的价值观来决定。 不忘初心，方得始终万事万物都有其自然的法则，依循这自然的发展，常常回头看看自己的脚跟，才是生命成长正常的态度。“不雨花犹落，无风絮自飞”，花与絮的飞落不必因为风雨，而是它已进入了生命的时序。]]></content>
+      <categories>
+        <category>读书</category>
+      </categories>
+      <tags>
+        <tag>名句摘抄</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git常用命令]]></title>
+    <url>%2F2019%2F05%2FGit%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[概念Git和其他版本控制系统如SVN的一个不同之处就是有暂存区的概念。 工作区：在电脑里能看到的目录 版本库：版本库里包含被称为stage的暂存区以及git自动创建的第一个分支master以及指向master的一个指针HEAD。 初始化配置创建及管理修改信息查询版本回退]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>版本管理</tag>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[STL队列]]></title>
     <url>%2F2019%2F05%2FSTL%E9%98%9F%E5%88%97%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[头文件1#include&lt;queue&gt; 构造函数1queue&lt;T&gt; que; 成员函数123456void push(const value_type&amp; val); // 将元素置入queue中。 void pop(); // 会从queue中移除一个元素（也就是第一个被置入的元素）。value_type front(); // 会返回queue内的下一个元素（也就是第一个被置入的元素）。value_type back(); // 会返回queue的最后一个元素（也就是最后一个被插入的元素）。size_type size() const; // 返回stack长度。bool empty() const; // 返回stack是否为空。]]></content>
       <categories>
         <category>技术</category>
       </categories>
@@ -15,7 +38,7 @@
   <entry>
     <title><![CDATA[STL向量]]></title>
     <url>%2F2019%2F05%2FSTL%E5%90%91%E9%87%8F%2F</url>
-    <content type="text"><![CDATA[头文件1#include &lt;vector&gt; 声明及初始化12345678vector&lt;int&gt; vec; // 声明一个int型向量vector&lt;int&gt; vec(5); // 声明一个初始大小为5的int向量，向量元素执行默认初始化vector&lt;int&gt; vec(10, 1); // 声明一个初始大小为10且值都是1的向量vector&lt;int&gt; vec(tmp); // 声明并用tmp向量初始化vec向量vector&lt;int&gt; tmp(vec.begin(), vec.begin() + 3); // 用向量vec的第0个到第2个值初始化tmpint arr[5] = &#123;1, 2, 3, 4, 5&#125;;vector&lt;int&gt; vec(arr, arr + 5); // 将arr数组的元素用于初始化vec向量 (说明：当然不包括arr[4]元素，末尾指针都是指结束元素的下一个元素，这个主要是为了和vec.end()指针统一。)vector&lt;int&gt; vec(&amp;arr[1], &amp;arr[4]); // 将arr[1]~arr[4]范围内的元素作为vec的初始值 基本操作容量（capacity）与长度（size）size指容器当前拥有的元素个数；capacity则指容器在必须分配新存储空间之前可以存储的元素总数,也可以说是预分配存储空间的大小。 向量长度：vec.size(); 向量支持的最大容量： vec.max_size(); 更改向量长度： 12vec.resize(n); // 将向量的大小改为n。（当n小于当前长度则擦除后续部分，但vec的容量不变；n大于当前长度则插入新元素，新元素设为默认值；若n超出当前向量分配的容量，则会将当前容量扩容至n。）vec.resize(n, t); // 作用与上一函数相同，只是将新元素的值设置为t 保留适当容量：vec.reserve(n); // 预分配n个元素的存储空间。（当n大于当前容量时则将容量扩充至n；当n小于等于当前容量时则无变化。容器调用resize()函数后，所有空间都已经初始化可以直接访问，而调用reserve()函数预先分配出的空间没有被初始化，所以不可以直接访问） 向量真实容量：vec.capacity(); 向量判空： vec.empty(); 减少向量容量到满足元素所占存储空间的大小： vec.shrink_to_fit(); //shrink_to_fit]]></content>
+    <content type="text"><![CDATA[头文件1#include &lt;vector&gt; 声明及初始化12345678910vector&lt;int&gt; vec; // 声明一个int型向量vector&lt;int&gt; vec(5); // 声明一个初始大小为5的int向量，向量元素执行默认初始化vector&lt;int&gt; vec(10, 1); // 声明一个初始大小为10且值都是1的向量vector&lt;int&gt; vec(tmp); // 声明并用tmp向量初始化vec向量vector&lt;int&gt; tmp(vec.begin(), vec.begin() + 3); // 用向量vec的第0个到第2个值初始化tmpint arr[5] = &#123;1, 2, 3, 4, 5&#125;;vector&lt;int&gt; vec(arr, arr + 5); /* 将arr数组的元素用于初始化vec向量(说明：当然不包括arr[4]元素，末尾指针都是指结束元素的下一个元素，这个主要是为了和vec.end()指针统一。)*/vector&lt;int&gt; vec(&amp;arr[1], &amp;arr[4]); // 将arr[1]~arr[4]范围内的元素作为vec的初始值 基本操作容量（capacity）与长度（size）size指容器当前拥有的元素个数；capacity则指容器在必须分配新存储空间之前可以存储的元素总数,也可以说是预分配存储空间的大小。 向量长度：vec.size(); 向量支持的最大容量： vec.max_size(); 更改向量长度： 12vec.resize(n); // 将向量的大小改为n。（当n小于当前长度则擦除后续部分，但vec的容量不变；n大于当前长度则插入新元素，新元素设为默认值；若n超出当前向量分配的容量，则会将当前容量扩容至n。）vec.resize(n, t); // 作用与上一函数相同，只是将新元素的值设置为t 保留适当容量：vec.reserve(n); // 预分配n个元素的存储空间。（当n大于当前容量时则将容量扩充至n；当n小于等于当前容量时则无变化。容器调用resize()函数后，所有空间都已经初始化可以直接访问，而调用reserve()函数预先分配出的空间没有被初始化，所以不可以直接访问） 向量真实容量：vec.capacity(); 向量判空： vec.empty(); 减少向量容量到满足元素所占存储空间的大小： vec.shrink_to_fit(); //shrink_to_fit 修改 多元素赋值：vec.assign(iterator first, iterator last) // 将[first, last)之间的值赋值给vec 末尾添加元素：void vec.push_back(elem) 末尾删除元素：void vec.pop_back(elem) 插入元素： iterator vec.insert() // 返回一个指向第一个新插入元素的迭代器 12345iterator insert (const_iterator position, const value_type&amp; val); //single elementiterator insert (const_iterator position, size_type n, const value_type&amp; val); // fill iterator insert (const_iterator position, InputIterator first, InputIterator last); // rangeiterator insert (const_iterator position, value_type&amp;&amp; val); //moveiterator insert (const_iterator position, initializer_list&lt;value_type&gt; il); //initializer list 任意位置删除元素： vec.erase(); 交换两个向量的元素： vec.swap(); 清空向量元素： vec.clear(); 迭代器12345678910iterator vec.begin();iterator vec.end(); //末尾指针，指向最后一个元素的下一个位置const_iterator vec.cbegin(); /*指向常量的开始指针，意思就是不能通过这个指针来修改所指的内容，但还是可以通过其他方式修改的，而且指针也是可以移动的。*/const_iterator vec.cend(); //指向常量的末尾指针reverse_iterator vec.rbegin() //逆向迭代器的开始指针reverse_iterator vec.rend(); //逆向迭代器的尾指针const_reverse_iterator vec.crbegin() //逆向迭代器的开始指针,指向常量const_reverse_iterator vec.crend(); //逆向迭代器的尾指针,指向常量 元素访问 下标访问： vec[1]; //并不会检查是否越界 at方法访问： vec.at(1); //以上两者的区别就是at会检查是否越界，是则抛出out of range异常 访问第一个元素： vec.front(); 访问最后一个元素： vec.back(); 返回一个指针： int* p = vec.data(); //可行的原因在于vector在内存中就是一个连续存储的数组，所以可以返回一个指针指向这个数组。这是是C++11的特性。 应用 遍历元素 1234567vector&lt;int&gt;::iterator it;for (it = vec.begin(); it != vec.end(); it++) cout &lt;&lt; *it &lt;&lt; endl;//或者for (size_t i = 0; i &lt; vec.size(); i++) &#123; cout &lt;&lt; vec.at(i) &lt;&lt; endl;&#125; 元素翻转 12#include &lt;algorithm&gt;reverse(vec.begin(), vec.end()); 元素排序 12345#include &lt;algorithm&gt;sort(vec.begin(), vec.end()); //采用的是从小到大的排序//如果想从大到小排序，可以采用上面反转函数，也可以采用下面方法:bool Comp(const int&amp; a, const int&amp; b) &#123;return a &gt; b;&#125;sort(vec.begin(), vec.end(), Comp);]]></content>
       <categories>
         <category>技术</category>
       </categories>
