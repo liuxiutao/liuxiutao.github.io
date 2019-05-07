@@ -112,7 +112,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":23,"offset_float":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: true,
@@ -1389,7 +1389,7 @@ pre .javascript .function {
 }
 @media (max-width: 800px) {
   .posts-expand {
-    margin: 0 5px;
+    margin: 0;
   }
   .post-body pre {
     padding: 10px;
@@ -2085,7 +2085,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9fff2f;
+  background: #8e0891;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3256,7 +3256,7 @@ body {
   line-height: 1.7;
 }
 .main {
-  padding-bottom: 125px;
+  padding-bottom: 110px;
   word-wrap: break-word;
 }
 #instantclick {
@@ -3267,14 +3267,19 @@ body {
   background-color: rgba(255,255,255,0.9);
 }
 .headband {
-  height: 3px;
-  background: #101a50;
+  height: 2px;
+  background: #3448a1;
 }
 .container .header-inner {
   width: 100%;
   position: relative;
-  max-width: 960px;
+  max-width: 1000px;
   background: rgba(255,255,255,0);
+}
+@media (min-width: 801px) {
+  .header-margin {
+    margin: 0 20px;
+  }
 }
 .site-brand-wrapper {
   background-color: #fff;
@@ -3366,8 +3371,13 @@ body {
 }
 .container .main-inner {
   width: 100%;
-  max-width: 960px;
+  max-width: 1000px;
   overflow: hidden;
+}
+@media (min-width: 801px) {
+  .main-margin {
+    margin: 0 20px;
+  }
 }
 .content-wrap {
   background-color: rgba(255,255,255,0);
@@ -3376,15 +3386,22 @@ body {
 }
 @media (min-width: 801px) {
   .content-wrap {
-    background-color: rgba(255,255,255,0);
-    padding: 20px 0px 0px 0px;
-    min-height: 600px;
     margin-right: -260px;
     width: 100%;
   }
   div#content {
     margin-right: 260px;
   }
+}
+@media (max-width: 800px) {
+  .content-wrap {
+    padding: 10px 0 0 0;
+  }
+}
+.page {
+  background-color: rgba(255,255,255,0.9);
+  min-height: 600px;
+  padding: 40px 25px 25px 25px;
 }
 .post {
   margin-top: 0px;
@@ -3393,15 +3410,26 @@ body {
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
-.page {
-  background-color: rgba(255,255,255,0.9);
-  min-height: 600px;
-  padding: 40px 20px 20px 20px;
-}
 .post {
   background-color: rgba(255,255,255,0.9);
-  margin-bottom: 40px;
-  padding: 45px 25px 25px 25px;
+}
+@media (min-width: 801px) {
+  .post {
+    margin-bottom: 20px;
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .post {
+    margin-bottom: 10px;
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
 }
 .post:last-child {
   margin-bottom: 0px;
@@ -3417,49 +3445,48 @@ body {
   border-bottom: 1px solid #fc6423;
 }
 a.post-tag {
-  background: #ececec;
-  border-radius: 3px 0 0 3px;
-  color: #52768e;
-  display: inline-block;
-  height: 26px;
-  line-height: 26px;
-  padding: 0 20px 0 23px;
-  position: relative;
-  margin: 0 0.5rem 0.6rem 0;
-  text-decoration: none;
-  -webkit-transition: color 0.2s;
   border-bottom: 0px solid #999;
 }
-.post-tag::before {
+.post-tag-name::before {
+  display: block;
+  height: 6px;
+  width: 6px;
   background: #fff;
   border-radius: 10px;
   -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.25);
   box-shadow: inset 0 1px rgba(0,0,0,0.25);
   content: '';
-  height: 6px;
-  left: 10px;
-  position: absolute;
-  width: 6px;
-  top: 10px;
+  position: relative;
+  left: -20px;
+  top: 12px;
 }
-.post-tag::after {
-  background: #fff;
-  border-bottom: 13px solid transparent;
-  border-left: 10px solid #ececec;
-  border-top: 13px solid transparent;
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.post-tag:hover,
-.post-tag.active {
-  background-color: #c76c0c;
+.post-tag-name {
   color: #fff;
+  background-color: #f57e39;
+  height: 30px;
+  padding-left: 30px;
+  padding-right: 20px;
+  float: left;
+  line-height: 19px;
+  border-radius: 3px 0 0 3px;
 }
-.post-tag:hover::after,
-.post-tag.active::after {
-  border-left-color: #c76c0c;
+.triangle {
+  width: 0;
+  height: 0;
+  border-width: 15px 0 15px 15px;
+  border-style: solid;
+  border-color: transparent transparent transparent #f57e39;
+
+  position: relative;
+  float: left;
+}
+.post-tag:hover .post-tag-name,
+.post-tag.active .post-tag-name {
+  background-color: #f99d68;
+}
+.post-tag:hover .triangle,
+.post-tag.active .triangle {
+  border-color: transparent transparent transparent #f99d68;
 }
 .posts-expand .post-eof {
   display: block;
@@ -3482,22 +3509,18 @@ p {
   margin: 5px 10px;
   font-size: 20px;
 }
-.posts-collapse .post-title {
-  margin-left: 60px;
-  margin-top: 1px;
-  margin-bottom: 1px;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: inherit;
+@media (max-width: 800px) {
+  .posts-expand {
+    margin: 0 10px;
+  }
+  .category-all-page .category-list {
+    margin-left: 15px;
+  }
 }
-.posts-collapse {
-  margin-left: 50px;
-  margin-right: 40px;
-  margin-top: 20px;
-}
-.posts-collapse .post {
-  padding: 20px 20px 20px 30px;
-  margin: 10px 0;
+@media (min-width: 801px) {
+  .category-all-page .category-list {
+    margin-left: 30px;
+  }
 }
 .posts-collapse .collection-title {
   position: relative;
@@ -3505,9 +3528,6 @@ p {
 }
 .posts-collapse::after {
   background: rgba(255,255,255,0.9);
-}
-.category-all-page .category-list {
-  margin-left: 40px;
 }
 .page-archive .posts-collapse .archive-move-on {
   background: #fff;
@@ -3524,16 +3544,51 @@ p {
 .archive-year {
   color: #fff;
 }
+.posts-collapse .post-title {
+  margin-left: 60px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: inherit;
+}
+.posts-collapse {
+  margin-top: 20px;
+}
+@media (min-width: 801px) {
+  .posts-collapse {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .posts-collapse {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.posts-collapse .post {
+  padding: 20px 20px 20px 30px;
+  margin: 10px 0;
+}
 .comments {
   margin: 0 0 0 0;
 }
 .footer {
   background-color: rgba(255,255,255,0.85);
   line-height: 1.5;
+  min-height: 90px;
   color: #555;
 }
 .footer .footer-inner {
-  margin: 10px auto;
+  margin: 13px auto;
+  width: 100%;
+  max-width: 1000px;
+}
+@media (min-width: 801px) {
+  .header-margin {
+    footer: 0 20px;
+  }
 }
 i.fa.fa-heart {
   color: #f55e5e;
@@ -3550,7 +3605,8 @@ i.fa.fa-heart {
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
+      <div class="header-inner">
+        <div class="header-margin"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
@@ -3698,14 +3754,17 @@ i.fa.fa-heart {
 
 
 
- </div>
+ 
+        </div>
+      </div>
     </header>
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
+        <div class="main-margin">
+          <div class="content-wrap">
+            <div id="content" class="content">
+              
 
   <div id="posts" class="posts-expand">
     
@@ -3829,7 +3888,7 @@ i.fa.fa-heart {
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="/2019/04/hello-world/hello-world.jpg" rel="gallery_cjvcfjdk700021gv03u485v0x" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+              <a class="post-gallery-img fancybox" href="/2019/04/hello-world/hello-world.jpg" rel="gallery_cjvdtdicm0006gkv0480z5dxr" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="/2019/04/hello-world/hello-world.jpg" itemprop="contentUrl">
               </a>
             
@@ -3907,7 +3966,9 @@ i.fa.fa-heart {
     
       <div>
         <div>
-    <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    <div style="text-align:center;color: #f0ad4e;font-size:14px; margin-top: 20px">
+        -------------本文结束 <i class="fa fa-paw"></i> 感谢您的阅读-------------
+    </div>
 </div>
       </div>
     
@@ -3965,11 +4026,13 @@ i.fa.fa-heart {
         <div class="post-tags">
           
             <a class="post-tag" href="/tags/Hexo/" rel="tag">
-              Hexo
+              <div class="post-tag-name">Hexo</div>
+              <div class="triangle"></div>
             </a>
           
             <a class="post-tag" href="/tags/NexT/" rel="tag">
-              NexT
+              <div class="post-tag-name">NexT</div>
+              <div class="triangle"></div>
             </a>
           
         </div>
@@ -4014,19 +4077,19 @@ i.fa.fa-heart {
   </div>
 
 
-          </div>
-          
+            </div>
+            
 
 
-          
+            
   <div class="comments" id="comments">
     
   </div>
 
 
-        </div>
-        
+          </div>
           
+            
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -4036,7 +4099,7 @@ i.fa.fa-heart {
     </div>
   </div>
 
-  <aside id="sidebar" class="sidebar" style="margin-top: 0">
+  <aside id="sidebar" class="sidebar" style="margin-top: 0px">
     
     <div class="sidebar-inner">
 
@@ -4182,13 +4245,15 @@ i.fa.fa-heart {
   </aside>
 
 
-        
+          
+        </div>
       </div>
     </main>
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">
+        <div class="footer-margin">
+          <div class="copyright">
   
   © 
   <span itemprop="copyrightYear">2019</span>
@@ -4203,7 +4268,7 @@ i.fa.fa-heart {
 <div>
   本站部分图片来源于网络，如有侵权，请联系本人删除
 </div>
-        
+          
 <div class="busuanzi-count">
   <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
@@ -4225,7 +4290,8 @@ i.fa.fa-heart {
 </div>
 
 
-        
+          
+        </div>
       </div>
     </footer>
 
