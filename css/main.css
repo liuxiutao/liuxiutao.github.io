@@ -1930,7 +1930,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a32aff;
+  background: #ffe753;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3112,9 +3112,8 @@ body {
   background-color: rgba(255,255,255,0.9);
 }
 .headband {
-  display: none;
   height: 2px;
-  background: #3448a1;
+  background: #a9a9a9;
 }
 .container .header-inner {
   width: 100%;
