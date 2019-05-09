@@ -99,7 +99,7 @@
 <meta property="og:description" content="概念Git和其他版本控制系统如SVN的一个不同之处就是有暂存区的概念。  工作区：在电脑里能看到的目录 版本库：版本库里包含被称为stage的暂存区以及git自动创建的第一个分支master以及指向master的一个指针HEAD。   初始化配置 安装好git之后通过如下命令配置用户名和email 12$ git config --global user.name &quot;Your Name&quot;$ git">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://liuxiutao.github.io/2019/05/Git常用命令/Git.jpg">
-<meta property="og:updated_time" content="2019-05-09T05:12:39.417Z">
+<meta property="og:updated_time" content="2019-05-09T05:32:20.191Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git常用命令">
 <meta name="twitter:description" content="概念Git和其他版本控制系统如SVN的一个不同之处就是有暂存区的概念。  工作区：在电脑里能看到的目录 版本库：版本库里包含被称为stage的暂存区以及git自动创建的第一个分支master以及指向master的一个指针HEAD。   初始化配置 安装好git之后通过如下命令配置用户名和email 12$ git config --global user.name &quot;Your Name&quot;$ git">
@@ -2085,7 +2085,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #409a22;
+  background: #ff5549;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3830,7 +3830,7 @@ i.fa.fa-heart {
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-05-09T13:12:39+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-09T13:32:20+08:00">
                 2019-05-09
               </time>
             
@@ -3893,7 +3893,7 @@ i.fa.fa-heart {
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="/2019/05/Git常用命令/Git.jpg" rel="gallery_cjvg7i7s20007nsv0852323uj" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+              <a class="post-gallery-img fancybox" href="/2019/05/Git常用命令/Git.jpg" rel="gallery_cjvg7tdkf0000lov0ojcau34l" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="/2019/05/Git常用命令/Git.jpg" itemprop="contentUrl">
               </a>
             
@@ -4016,17 +4016,6 @@ i.fa.fa-heart {
 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -- &lt;file&gt;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 </ol>
-<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><ul>
-<li><p>关联远程仓库</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin &lt;远程仓库地址&gt; <span class="comment"># 添加远程仓库</span></span><br><span class="line">$ git remote -v <span class="comment"># 查看远程仓库信息</span></span><br><span class="line">$ git remote rm &lt;仓库名&gt; <span class="comment"># 删除远程仓库</span></span><br><span class="line">$ git remote &lt;仓库名&gt; <span class="built_in">set</span>-url &lt;远程仓库地址&gt; <span class="comment"># 修改远程仓库的链接</span></span><br><span class="line">$ git remote rename &lt;remote-name&gt; &lt;new-name]&gt; <span class="comment"># 远程仓库重命名</span></span><br></pre></td></tr></tbody></table></figure>
-</li>
-<li><p>抓取与推送</p>
-</li>
-<li><code>git fetch &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</code>   从远程仓库指定分支中拉取所有你还没有的数据保存到本地分支中。 执行完成后，你将会拥有那个远程仓库中所有分支的引用，可以随时合并或查看。</li>
-<li><code>git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</code>   自动的抓取然后合并远程分支到当前分支</li>
-<li><code>git push &lt;remote-name&gt; &lt;branch-name&gt;</code>    将当期分支推送到远程仓库的指定分支中</li>
-<li><code>git push -u origin master</code> 第一次推送master分支的所有内容；（加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。）</li>
-</ul>
 <h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><p><em><strong>Git鼓励大量使用分支</strong></em></p>
 <h3 id="分支常用操作"><a href="#分支常用操作" class="headerlink" title="分支常用操作"></a>分支常用操作</h3><ul>
 <li><p>查看分支：</p>
@@ -4052,7 +4041,34 @@ i.fa.fa-heart {
 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push [remote name] --delete [remote branch]</span><br></pre></td></tr></tbody></table></figure>
 </li>
 </ul>
-<h3 id="变基（rebase）"><a href="#变基（rebase）" class="headerlink" title="变基（rebase）"></a>变基（rebase）</h3><p>将当前分支合并到其他分支并使得提交历史变得简洁<br>将分支b变基到分支a上过程如下：<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout &lt;branch b&gt;</span><br><span class="line">$ git rebase &lt;branch a&gt;</span><br><span class="line"><span class="comment"># 以下两步用于前移a分支的head</span></span><br><span class="line">$ git checkout &lt;branch a&gt;</span><br><span class="line">$ git merge &lt;branch b&gt;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="变基（rebase）"><a href="#变基（rebase）" class="headerlink" title="变基（rebase）"></a>变基（rebase）</h3><p>将当前分支合并到其他分支并使得提交历史变得简洁</p>
+<ul>
+<li><p>将分支b变基到分支a上过程如下：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout &lt;branch b&gt;</span><br><span class="line">$ git rebase &lt;branch a&gt;</span><br><span class="line"><span class="comment"># 以下两步用于前移a分支的head</span></span><br><span class="line">$ git checkout &lt;branch a&gt;</span><br><span class="line">$ git merge &lt;branch b&gt;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>解决rebase冲突</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git diff</span><br><span class="line">$ <span class="comment"># 修改冲突的内容</span></span><br><span class="line">$ git add &lt;file&gt;</span><br><span class="line">$ git rebase --<span class="built_in">continue</span></span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><ul>
+<li><p>关联远程仓库</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin &lt;远程仓库地址&gt; <span class="comment"># 添加远程仓库</span></span><br><span class="line">$ git remote -v <span class="comment"># 查看远程仓库信息</span></span><br><span class="line">$ git remote rm &lt;仓库名&gt; <span class="comment"># 删除远程仓库</span></span><br><span class="line">$ git remote &lt;仓库名&gt; <span class="built_in">set</span>-url &lt;远程仓库地址&gt; <span class="comment"># 修改远程仓库的链接</span></span><br><span class="line">$ git remote rename &lt;remote-name&gt; &lt;new-name]&gt; <span class="comment"># 远程仓库重命名</span></span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>抓取与推送</p>
+<ul>
+<li><code>git fetch &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</code>   从远程仓库指定分支中拉取所有你还没有的数据保存到本地分支中。 执行完成后，你将会拥有那个远程仓库中所有分支的引用，可以随时合并或查看。</li>
+<li><code>git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</code>   自动的抓取然后合并远程分支到当前分支</li>
+<li><code>git push &lt;remote-name&gt; &lt;branch-name&gt;</code>    将当期分支推送到远程仓库的指定分支中</li>
+<li><code>git push -u origin master</code> 第一次推送master分支的所有内容；（加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。）</li>
+</ul>
+</li>
+<li><p>远程仓库强制覆盖本地修改</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch -all</span><br><span class="line">$ git reset --hard origin/master <span class="comment"># 指定远程分支origin/dev_liutao</span></span><br><span class="line">$ git pull origin dev_liutao</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>推送修改到远程仓库</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch</span><br><span class="line">$ git rebase origin/master</span><br><span class="line">$ git push</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
 
       
     </div>
@@ -4332,7 +4348,7 @@ i.fa.fa-heart {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概念"><span class="nav-number">1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化配置"><span class="nav-number">2.</span> <span class="nav-text">初始化配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建及管理修改"><span class="nav-number">3.</span> <span class="nav-text">创建及管理修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#信息查询"><span class="nav-number">4.</span> <span class="nav-text">信息查询</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#跟踪工作区的修改"><span class="nav-number">4.1.</span> <span class="nav-text">跟踪工作区的修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看提交记录"><span class="nav-number">4.2.</span> <span class="nav-text">查看提交记录</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#版本回退"><span class="nav-number">5.</span> <span class="nav-text">版本回退</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#撤销修改"><span class="nav-number">6.</span> <span class="nav-text">撤销修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除文件"><span class="nav-number">7.</span> <span class="nav-text">删除文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#远程仓库"><span class="nav-number">8.</span> <span class="nav-text">远程仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分支管理"><span class="nav-number">9.</span> <span class="nav-text">分支管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#分支常用操作"><span class="nav-number">9.1.</span> <span class="nav-text">分支常用操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变基（rebase）"><span class="nav-number">9.2.</span> <span class="nav-text">变基（rebase）</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概念"><span class="nav-number">1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化配置"><span class="nav-number">2.</span> <span class="nav-text">初始化配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建及管理修改"><span class="nav-number">3.</span> <span class="nav-text">创建及管理修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#信息查询"><span class="nav-number">4.</span> <span class="nav-text">信息查询</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#跟踪工作区的修改"><span class="nav-number">4.1.</span> <span class="nav-text">跟踪工作区的修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看提交记录"><span class="nav-number">4.2.</span> <span class="nav-text">查看提交记录</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#版本回退"><span class="nav-number">5.</span> <span class="nav-text">版本回退</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#撤销修改"><span class="nav-number">6.</span> <span class="nav-text">撤销修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除文件"><span class="nav-number">7.</span> <span class="nav-text">删除文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分支管理"><span class="nav-number">8.</span> <span class="nav-text">分支管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#分支常用操作"><span class="nav-number">8.1.</span> <span class="nav-text">分支常用操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变基（rebase）"><span class="nav-number">8.2.</span> <span class="nav-text">变基（rebase）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#远程仓库"><span class="nav-number">9.</span> <span class="nav-text">远程仓库</span></a></li></ol></div>
             
 
           </div>
