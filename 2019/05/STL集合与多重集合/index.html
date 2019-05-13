@@ -72,7 +72,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="C++,STL,">
 
 
 
@@ -90,19 +90,20 @@
 
 
 
-<meta name="description" content="人生没有对错，只有成长！">
+<meta name="description" content="set是STL中一种标准关联容器。它底层使用平衡的搜索树——红黑树实现，插入删除操作时仅仅需要指针操作节点即可完成，不涉及到内存移动和拷贝，所以效率比较高，时间复杂度均为O(logn)。 set，顾名思义是“集合”的意思，在set中元素都是唯一的，而且默认情况下会对元素自动进行升序排列，支持集合的交(set_intersection)、差(set_difference) 、并(set_union)">
+<meta name="keywords" content="C++,STL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="STL集合与多重集合">
 <meta property="og:url" content="https://liuxiutao.github.io/2019/05/STL集合与多重集合/index.html">
 <meta property="og:site_name" content="LiuTao's Blog">
-<meta property="og:description" content="人生没有对错，只有成长！">
+<meta property="og:description" content="set是STL中一种标准关联容器。它底层使用平衡的搜索树——红黑树实现，插入删除操作时仅仅需要指针操作节点即可完成，不涉及到内存移动和拷贝，所以效率比较高，时间复杂度均为O(logn)。 set，顾名思义是“集合”的意思，在set中元素都是唯一的，而且默认情况下会对元素自动进行升序排列，支持集合的交(set_intersection)、差(set_difference) 、并(set_union)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://liuxiutao.github.io/2019/月份/标题/图片名.jpg">
-<meta property="og:updated_time" content="2019-05-13T07:57:28.226Z">
+<meta property="og:image" content="https://liuxiutao.github.io/2019/05/STL集合与多重集合/封面.jpg">
+<meta property="og:updated_time" content="2019-05-13T12:35:41.721Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="STL集合与多重集合">
-<meta name="twitter:description" content="人生没有对错，只有成长！">
-<meta name="twitter:image" content="https://liuxiutao.github.io/2019/月份/标题/图片名.jpg">
+<meta name="twitter:description" content="set是STL中一种标准关联容器。它底层使用平衡的搜索树——红黑树实现，插入删除操作时仅仅需要指针操作节点即可完成，不涉及到内存移动和拷贝，所以效率比较高，时间复杂度均为O(logn)。 set，顾名思义是“集合”的意思，在set中元素都是唯一的，而且默认情况下会对元素自动进行升序排列，支持集合的交(set_intersection)、差(set_difference) 、并(set_union)">
+<meta name="twitter:image" content="https://liuxiutao.github.io/2019/05/STL集合与多重集合/封面.jpg">
 
 
 
@@ -2084,7 +2085,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e3ff29;
+  background: #ff6fff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3845,12 +3846,34 @@ i.fa.fa-heart {
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-05-13T15:57:28+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-13T20:35:41+08:00">
                 2019-05-13
               </time>
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -3886,8 +3909,8 @@ i.fa.fa-heart {
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="/2019/月份/标题/图片名.jpg" rel="gallery_cjvm41681000crov010q3oqvq" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="/2019/月份/标题/图片名.jpg" itemprop="contentUrl">
+              <a class="post-gallery-img fancybox" href="/2019/05/STL集合与多重集合/封面.jpg" rel="gallery_cjvmfkgfq000j6cv0vsi7742l" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+                <img src="/2019/05/STL集合与多重集合/封面.jpg" itemprop="contentUrl">
               </a>
             
           
@@ -3898,7 +3921,38 @@ i.fa.fa-heart {
       
 
       
-        
+        <p>set是STL中一种标准关联容器。它底层使用平衡的搜索树——红黑树实现，插入删除操作时仅仅需要指针操作节点即可完成，不涉及到内存移动和拷贝，所以效率比较高，时间复杂度均为O(logn)。</p>
+<p>set，顾名思义是“集合”的意思，在set中元素都是唯一的，而且默认情况下会对元素自动进行升序排列，支持集合的交(set_intersection)、差(set_difference) 、并(set_union)、对称差(set_symmetric_difference) 等一些集合上的操作，如果需要集合中的元素允许重复那么可以使用multiset。</p>
+<p>自动排序的优点是使得搜寻元素时具有良好的性能，具有对数时间复杂度。但是造成的一个缺点就是：不能直接改变元素值。因为这样会打乱原有的顺序。改变元素值的方法是：先删除旧元素，再插入新元素。存取元素只能通过迭代器，从迭代器的角度看，元素值是常数。</p>
+<h2 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h2><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;set&gt;</span></span></span><br></pre></td></tr></tbody></table></figure>
+<p>构造函数：</p>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;set&gt;</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> {</span></span><br><span class="line">    <span class="keyword">int</span> a,b;</span><br><span class="line">    <span class="keyword">char</span> s;</span><br><span class="line">} newtype;</span><br><span class="line"></span><br><span class="line"><span class="comment">//自定义比较函数</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">compare</span>//<span class="title">there</span> <span class="title">is</span> <span class="title">no</span> ().</span></span><br><span class="line"><span class="class">{</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//重载()</span></span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">operator</span><span class="params">()</span><span class="params">(<span class="keyword">const</span> newtype &amp;a, <span class="keyword">const</span> newtype &amp;b)</span> <span class="keyword">const</span></span></span><br><span class="line"><span class="function">    </span>{</span><br><span class="line">        <span class="keyword">return</span> a.s&lt;b.s;</span><br><span class="line">    }</span><br><span class="line">};</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span>&lt;newtype,compare&gt; element;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    newtype a,b,c,d,t;</span><br><span class="line">    a.a=<span class="number">1</span>; a.s=<span class="string">'b'</span>;</span><br><span class="line">    b.a=<span class="number">2</span>; b.s=<span class="string">'c'</span>;</span><br><span class="line">    c.a=<span class="number">4</span>; c.s=<span class="string">'d'</span>;</span><br><span class="line">    d.a=<span class="number">3</span>; d.s=<span class="string">'a'</span>;</span><br><span class="line"> </span><br><span class="line">    element.insert(a);</span><br><span class="line">    element.insert(b);</span><br><span class="line">    element.insert(c);</span><br><span class="line">    element.insert(d);</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">set</span>&lt;newtype,compare&gt;::iterator it;</span><br><span class="line">    <span class="keyword">for</span>(it=element.begin(); it!=element.end();it++)</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;(*it).a&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(it=element.begin(); it!=element.end();it++)</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;(*it).s&lt;&lt;<span class="string">" "</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="迭代器："><a href="#迭代器：" class="headerlink" title="迭代器："></a>迭代器：</h2><ul>
+<li>s.begin() 　<br>返回指向set容器中第一个元素的迭代器 </li>
+<li>s.end() 　　<br>返回指向set容器的最后一个元素迭代器 </li>
+<li>s.rbegin() 　<br>返回指向set容器中最后一个元素的反向迭代器 </li>
+<li>s.rend() 　　<br>返回指向set容器的第一一个元素前的反向迭代器 </li>
+</ul>
+<h2 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h2><h3 id="容量"><a href="#容量" class="headerlink" title="容量"></a>容量</h3><ul>
+<li>s.size()<br>返回当前set容器中的元素个数</li>
+<li>s.empty()<br>判断set容器是否为空 </li>
+<li>s.max_size()<br>返回最大值</li>
+</ul>
+<h3 id="修改："><a href="#修改：" class="headerlink" title="修改："></a>修改：</h3><ul>
+<li><p>s.insert()</p>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pair&lt;iterator, <span class="keyword">bool</span>&gt; insert(<span class="keyword">const</span> value_type&amp; val); <span class="comment">// set调用，返回值可用于判断是否插入成功</span></span><br><span class="line"><span class="function">iterator <span class="title">insert</span><span class="params">(<span class="keyword">const</span> value_type&amp; val)</span></span>; <span class="comment">// multiset调用，返回值可用于判断是否插入成功</span></span><br><span class="line"><span class="function">iterator <span class="title">insert</span><span class="params">(const_iterator position, <span class="keyword">const</span> value_type&amp; val)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(InputIterator first, InputIterator last)</span></span>;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>s.erase()</p>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">size_type <span class="title">erase</span> <span class="params">(<span class="keyword">const</span> value_type&amp; val)</span></span>; <span class="comment">// 删除一个元素 </span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">erase</span> <span class="params">(iterator position)</span></span>; <span class="comment">// 删除某个位置的元素</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">erase</span> <span class="params">(iterator first, iterator last)</span></span>;  <span class="comment">// 删除某个范围内的元素</span></span><br><span class="line">s.clear() <span class="comment">// 删除set容器中的所有的元素 </span></span><br><span class="line">s.swap()</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<h3 id="其他操作："><a href="#其他操作：" class="headerlink" title="其他操作："></a>其他操作：</h3><ul>
+<li>iterator find(const value_type&amp; val) const;<br>查找一个元素，如果容器中不存在该元素，返回值等于end()</li>
+<li>size_type count (const value_type&amp; val) const;<br>返回某个元素的个数，由于set元素的唯一性，所以该函数总是返回0或者1；对于multiset则返回val元素的个数。</li>
+<li>lower_bound()</li>
+<li>upper_bound()</li>
+</ul>
+
       
     </div>
     
@@ -3964,6 +4018,20 @@ i.fa.fa-heart {
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a class="post-tag" href="/tags/C/" rel="tag">
+              <div class="post-tag-name">C++</div>
+              <div class="triangle"></div>
+            </a>
+          
+            <a class="post-tag" href="/tags/STL/" rel="tag">
+              <div class="post-tag-name">STL</div>
+              <div class="triangle"></div>
+            </a>
+          
+        </div>
       
 
       
@@ -4038,8 +4106,17 @@ i.fa.fa-heart {
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="刘韬">
           <p class="site-author-name" itemprop="name">刘韬</p>
@@ -4052,7 +4129,7 @@ i.fa.fa-heart {
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -4144,6 +4221,22 @@ i.fa.fa-heart {
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#头文件"><span class="nav-number">1.</span> <span class="nav-text">头文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#迭代器："><span class="nav-number">2.</span> <span class="nav-text">迭代器：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用操作"><span class="nav-number">3.</span> <span class="nav-text">常用操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#容量"><span class="nav-number">3.1.</span> <span class="nav-text">容量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改："><span class="nav-number">3.2.</span> <span class="nav-text">修改：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他操作："><span class="nav-number">3.3.</span> <span class="nav-text">其他操作：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

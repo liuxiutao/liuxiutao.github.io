@@ -72,7 +72,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="C++,STL,">
 
 
 
@@ -90,16 +90,20 @@
 
 
 
-<meta name="description" content="人生没有对错，只有成长！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="LiuTao's Blog">
-<meta property="og:url" content="https://liuxiutao.github.io/categories/读书/index.html">
+<meta name="description" content="Map是STL的一个关联容器，它提供一对一（其中第一个可以称为关键字，每个关键字只能在map中出现一次，第二个可能称为该关键字的值）的数据处理能力，由于这个特性，它完成有可能在我们处理一对一数据的时候，在编程上提供快速通道。这里说下map内部数据的组织，map内部自建一颗红黑树(一种非严格意义上的平衡二叉树)，这颗树具有对数据自动排序的功能，所以在map内部所有的数据都是有序的，后边我们会见识到有">
+<meta name="keywords" content="C++,STL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="STL映射与多重映射">
+<meta property="og:url" content="https://liuxiutao.github.io/2019/05/STL映射与多重映射/index.html">
 <meta property="og:site_name" content="LiuTao's Blog">
-<meta property="og:description" content="人生没有对错，只有成长！">
+<meta property="og:description" content="Map是STL的一个关联容器，它提供一对一（其中第一个可以称为关键字，每个关键字只能在map中出现一次，第二个可能称为该关键字的值）的数据处理能力，由于这个特性，它完成有可能在我们处理一对一数据的时候，在编程上提供快速通道。这里说下map内部数据的组织，map内部自建一颗红黑树(一种非严格意义上的平衡二叉树)，这颗树具有对数据自动排序的功能，所以在map内部所有的数据都是有序的，后边我们会见识到有">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://liuxiutao.github.io/2019/05/STL映射与多重映射/封面.jpg">
+<meta property="og:updated_time" content="2019-05-13T12:57:13.631Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LiuTao's Blog">
-<meta name="twitter:description" content="人生没有对错，只有成长！">
+<meta name="twitter:title" content="STL映射与多重映射">
+<meta name="twitter:description" content="Map是STL的一个关联容器，它提供一对一（其中第一个可以称为关键字，每个关键字只能在map中出现一次，第二个可能称为该关键字的值）的数据处理能力，由于这个特性，它完成有可能在我们处理一对一数据的时候，在编程上提供快速通道。这里说下map内部数据的组织，map内部自建一颗红黑树(一种非严格意义上的平衡二叉树)，这颗树具有对数据自动排序的功能，所以在map内部所有的数据都是有序的，后边我们会见识到有">
+<meta name="twitter:image" content="https://liuxiutao.github.io/2019/05/STL映射与多重映射/封面.jpg">
 
 
 
@@ -128,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="https://liuxiutao.github.io/categories/读书/">
+  <link rel="canonical" href="https://liuxiutao.github.io/2019/05/STL映射与多重映射/">
 
 
 
 
 
-  <title>分类: 读书 | LiuTao's Blog</title>
+  <title>STL映射与多重映射 | LiuTao's Blog</title>
   
 
 
@@ -3618,7 +3622,7 @@ i.fa.fa-heart {
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -3783,53 +3787,309 @@ i.fa.fa-heart {
             <div id="content" class="content">
               
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>读书<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liuxiutao.github.io/2019/05/STL映射与多重映射/">
 
-      <h2 class="post-title">
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘韬">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LiuTao's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/05/人生最美是清欢/" itemprop="url">
-              
-                <span itemprop="name">人生最美是清欢</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">STL映射与多重映射</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-05T16:28:32+08:00" content="2019-05-05">
-          05-05
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-13T20:36:42+08:00">
+                2019-05-13
+              </time>
+            
 
-    </header>
-  </article>
+            
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-13T20:57:13+08:00">
+                2019-05-13
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 阅读次数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+        <div class="post-gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
+          
+          
+            <div class="post-gallery-row">
+              <a class="post-gallery-img fancybox" href="/2019/05/STL映射与多重映射/封面.jpg" rel="gallery_cjvmfkgfn000g6cv0qu6sl8xo" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+                <img src="/2019/05/STL映射与多重映射/封面.jpg" itemprop="contentUrl">
+              </a>
+            
+          
+
+          
+          </div>
+        </div>
+      
+
+      
+        <p>Map是STL的一个关联容器，它提供一对一（其中第一个可以称为关键字，每个关键字只能在map中出现一次，第二个可能称为该关键字的值）的数据处理能力，由于这个特性，它完成有可能在我们处理一对一数据的时候，在编程上提供快速通道。这里说下map内部数据的组织，map内部自建一颗红黑树(一种非严格意义上的平衡二叉树)，这颗树具有对数据自动排序的功能，所以在map内部所有的数据都是有序的，后边我们会见识到有序的好处。</p>
+<h2 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h2><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;map&gt;</span></span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="构造函数（map-lt-key-val-gt-mapT）"><a href="#构造函数（map-lt-key-val-gt-mapT）" class="headerlink" title="构造函数（map<key, val> mapT）"></a>构造函数（map&lt;key, val&gt; mapT）</h2><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="built_in">string</span>&gt; mapStudent;</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h2><ul>
+<li>iterator vec.begin();</li>
+<li>iterator vec.end(); //末尾指针，指向最后一个元素的下一个位置</li>
+<li>const_iterator vec.cbegin(); //指向常量的开始指针，意思就是不能通过这个指针来修改所指的内容，但还是可以通过其他方式修改的，而且指针也是可以移动的。</li>
+<li>const_iterator vec.cend();  //指向常量的末尾指针</li>
+<li>reverse_iterator vec.rbegin() //逆向迭代器的开始指针</li>
+<li>reverse_iterator vec.rend();  //逆向迭代器的尾指针</li>
+<li>const_reverse_iterator vec.crbegin() //逆向迭代器的开始指针,指向常量</li>
+<li>const_reverse_iterator vec.crend();  //逆向迭代器的尾指针,指向常量<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//前向迭代</span></span><br><span class="line"><span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="built_in">string</span>&gt;::iterator iter;</span><br><span class="line"><span class="keyword">for</span>(iter = mapStudent.begin(); iter != mapStudent.end(); iter++)</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;iter-&gt;first&lt;&lt;<span class="string">' '</span>&lt;&lt;iter-&gt;second&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    </span><br><span class="line"><span class="comment">//反向迭代</span></span><br><span class="line"><span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="built_in">string</span>&gt;::reverse_iterator iter;  </span><br><span class="line"><span class="keyword">for</span>(iter = mapStudent.rbegin(); iter != mapStudent.rend(); iter++)  </span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;iter-&gt;first&lt;&lt;<span class="string">"  "</span>&lt;&lt;iter-&gt;second&lt;&lt;<span class="built_in">endl</span>;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<h2 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h2><h3 id="容量"><a href="#容量" class="headerlink" title="容量"></a>容量</h3><ul>
+<li><p>size()</p>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="built_in">string</span>&gt;::size_type nSize = mapStudent.size();</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>bool empty()<br>如果map为空则返回true</p>
+</li>
+<li>max_size()<br>返回可以容纳的最大元素个数</li>
+</ul>
+<h3 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h3><p>利用用迭代器或者数组的方式进行遍历<br></p><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> nindex = <span class="number">1</span>; nindex &lt;= nSize; nindex++) </span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;mapStudent[nindex]&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line"><span class="comment">// 此处应注意，</span></span><br><span class="line"><span class="comment">// 应该是 for(int nindex = 1; nindex &lt;= nSize; nindex++)  </span></span><br><span class="line"><span class="comment">// 而不是 for(int nindex = 0; nindex &lt; nSize; nindex++)</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h3><ol>
+<li><p>用insert函数插入pair数据</p>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mapStudent.insert(pair&lt;<span class="keyword">int</span>, <span class="built_in">string</span>&gt;(<span class="number">1</span>, <span class="string">"student_one"</span>));</span><br><span class="line">mapStudent.insert(pair&lt;<span class="keyword">int</span>, <span class="built_in">string</span>&gt;(<span class="number">3</span>, <span class="string">"student_three"</span>));</span><br><span class="line">mapStudent.insert(make_pair(<span class="number">2</span>, <span class="string">"student_two"</span>);</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>用insert函数插入value_type数据</p>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mapStudent.insert(<span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="built_in">string</span>&gt;::value_type (<span class="number">1</span>, <span class="string">"student_one"</span>));mapStudent.insert(<span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="built_in">string</span>&gt;::value_type (<span class="number">3</span>, <span class="string">"student_three"</span>));</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>用数组方式插入数据</p>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mapStudent[<span class="number">1</span>] = <span class="string">"student_one"</span>; </span><br><span class="line">mapStudent[<span class="number">3</span>] = <span class="string">"student_three"</span>;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ol>
+<h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><p>iterator find(const key_type&amp; k)函数来定位数据出现位置，它返回的一个迭代器，当数据出现时，它返回数据所在位置的迭代器，如果map中没有要查找的数据，它返回的迭代器等于end函数返回的迭代器。<br></p><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">iter = mapStudent.find(<span class="number">1</span>);  </span><br><span class="line"><span class="keyword">if</span>(iter != mapStudent.end())  </span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"Find, the value is "</span>&lt;&lt;iter-&gt;second&lt;&lt;<span class="built_in">endl</span>;  </span><br><span class="line"><span class="keyword">else</span>  </span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"Do not Find"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><pre><code>* iterator erase（iterator it);  //通过一个条目对象删除
+* iterator erase（iterator first，iterator last） //删除一个范围
+* size_type erase(const Key&amp;key);  //通过关键字删除
+* clear()  //全部清除
+</code></pre><h3 id="其他成员函数："><a href="#其他成员函数：" class="headerlink" title="其他成员函数："></a>其他成员函数：</h3><ul>
+<li>count()<br>返回指定元素出现的次数 size_type count (const key_type&amp; k) const;  </li>
+<li>swap()</li>
+<li>lower_bound()  </li>
+<li>upper_bound()   </li>
+</ul>
+<p>(具体见<a href="http://www.cplusplus.com/reference/map/map/" target="_blank" rel="noopener">http://www.cplusplus.com/reference/map/map/</a>)</p>
 
       
     </div>
+    
+    
+    
+    
+    
+      <div>
+        <div>
+    <div style="text-align:center;color: #f0ad4e;font-size:14px; margin-top: 20px">
+        -------------本文结束 <i class="fa fa-paw"></i> 感谢您的阅读-------------
+    </div>
+</div>
+      </div>
+    
 
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得写得还不错就请支持我吧！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="刘韬 WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    刘韬
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://liuxiutao.github.io/2019/05/STL映射与多重映射/" title="STL映射与多重映射">https://liuxiutao.github.io/2019/05/STL映射与多重映射/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a class="post-tag" href="/tags/C/" rel="tag">
+              <div class="post-tag-name">C++</div>
+              <div class="triangle"></div>
+            </a>
+          
+            <a class="post-tag" href="/tags/STL/" rel="tag">
+              <div class="post-tag-name">STL</div>
+              <div class="triangle"></div>
+            </a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/STL仿函数/" rel="next" title="STL仿函数">
+                <i class="fa fa-chevron-left"></i> STL仿函数
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/STL-string类型/" rel="prev" title="STL string类型">
+                STL string类型 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
             </div>
@@ -3837,6 +4097,10 @@ i.fa.fa-heart {
 
 
             
+  <div class="comments" id="comments">
+    
+  </div>
+
 
           </div>
           
@@ -3857,8 +4121,17 @@ i.fa.fa-heart {
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="刘韬">
           <p class="site-author-name" itemprop="name">刘韬</p>
@@ -3963,6 +4236,22 @@ i.fa.fa-heart {
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#头文件"><span class="nav-number">1.</span> <span class="nav-text">头文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#构造函数（map-lt-key-val-gt-mapT）"><span class="nav-number">2.</span> <span class="nav-text">构造函数（map&lt;key, val&gt; mapT）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#迭代器"><span class="nav-number">3.</span> <span class="nav-text">迭代器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用操作"><span class="nav-number">4.</span> <span class="nav-text">常用操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#容量"><span class="nav-number">4.1.</span> <span class="nav-text">容量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遍历"><span class="nav-number">4.2.</span> <span class="nav-text">遍历</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入"><span class="nav-number">4.3.</span> <span class="nav-text">插入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查找"><span class="nav-number">4.4.</span> <span class="nav-text">查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除"><span class="nav-number">4.5.</span> <span class="nav-text">删除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他成员函数："><span class="nav-number">4.6.</span> <span class="nav-text">其他成员函数：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -4100,10 +4389,10 @@ i.fa.fa-heart {
 
 
   
-    
-
-
   
+
+
+
 
   
 

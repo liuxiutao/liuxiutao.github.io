@@ -72,7 +72,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="C++,STL,">
 
 
 
@@ -90,16 +90,20 @@
 
 
 
-<meta name="description" content="人生没有对错，只有成长！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="LiuTao's Blog">
-<meta property="og:url" content="https://liuxiutao.github.io/categories/读书/index.html">
+<meta name="description" content="简介仿函数，也叫函数对象。函数指针毕竟不能满足STL对抽象性的要求，也不能满足软件积木的要求——函数指针无法和STL其他组件（如配接器adapter）搭配，产生更灵活的变化。同时，函数指针无法保存信息，而仿函数可以。就实现观点而言，仿函数其实上就是一个“行为类似函数”的对象。为了能够“行为类似函数”，其类别定义中必须自定义（或说改写，重载）function call运算子（operator()）。">
+<meta name="keywords" content="C++,STL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="STL仿函数">
+<meta property="og:url" content="https://liuxiutao.github.io/2019/05/STL仿函数/index.html">
 <meta property="og:site_name" content="LiuTao's Blog">
-<meta property="og:description" content="人生没有对错，只有成长！">
+<meta property="og:description" content="简介仿函数，也叫函数对象。函数指针毕竟不能满足STL对抽象性的要求，也不能满足软件积木的要求——函数指针无法和STL其他组件（如配接器adapter）搭配，产生更灵活的变化。同时，函数指针无法保存信息，而仿函数可以。就实现观点而言，仿函数其实上就是一个“行为类似函数”的对象。为了能够“行为类似函数”，其类别定义中必须自定义（或说改写，重载）function call运算子（operator()）。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://liuxiutao.github.io/2019/05/STL仿函数/封面.jpg">
+<meta property="og:updated_time" content="2019-05-13T13:13:02.037Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LiuTao's Blog">
-<meta name="twitter:description" content="人生没有对错，只有成长！">
+<meta name="twitter:title" content="STL仿函数">
+<meta name="twitter:description" content="简介仿函数，也叫函数对象。函数指针毕竟不能满足STL对抽象性的要求，也不能满足软件积木的要求——函数指针无法和STL其他组件（如配接器adapter）搭配，产生更灵活的变化。同时，函数指针无法保存信息，而仿函数可以。就实现观点而言，仿函数其实上就是一个“行为类似函数”的对象。为了能够“行为类似函数”，其类别定义中必须自定义（或说改写，重载）function call运算子（operator()）。">
+<meta name="twitter:image" content="https://liuxiutao.github.io/2019/05/STL仿函数/封面.jpg">
 
 
 
@@ -128,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="https://liuxiutao.github.io/categories/读书/">
+  <link rel="canonical" href="https://liuxiutao.github.io/2019/05/STL仿函数/">
 
 
 
 
 
-  <title>分类: 读书 | LiuTao's Blog</title>
+  <title>STL仿函数 | LiuTao's Blog</title>
   
 
 
@@ -3618,7 +3622,7 @@ i.fa.fa-heart {
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -3783,53 +3787,383 @@ i.fa.fa-heart {
             <div id="content" class="content">
               
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>读书<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liuxiutao.github.io/2019/05/STL仿函数/">
 
-      <h2 class="post-title">
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘韬">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LiuTao's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/05/人生最美是清欢/" itemprop="url">
-              
-                <span itemprop="name">人生最美是清欢</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">STL仿函数</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-05T16:28:32+08:00" content="2019-05-05">
-          05-05
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-13T20:36:20+08:00">
+                2019-05-13
+              </time>
+            
 
-    </header>
-  </article>
+            
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-13T21:13:02+08:00">
+                2019-05-13
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 阅读次数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    </div>
+      
+        <div class="post-gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
+          
+          
+            <div class="post-gallery-row">
+              <a class="post-gallery-img fancybox" href="/2019/05/STL仿函数/封面.jpg" rel="gallery_cjvmfkgf200026cv0ju0dvedf" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+                <img src="/2019/05/STL仿函数/封面.jpg" itemprop="contentUrl">
+              </a>
+            
+          
 
+          
+          </div>
+        </div>
+      
+
+      
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>仿函数，也叫函数对象。函数指针毕竟不能满足STL对抽象性的要求，也不能满足软件积木的要求——函数指针无法和STL其他组件（如配接器adapter）搭配，产生更灵活的变化。同时，函数指针无法保存信息，而仿函数可以。就实现观点而言，仿函数其实上就是一个“行为类似函数”的对象。为了能够“行为类似函数”，其类别定义中必须自定义（或说改写，重载）function call运算子（operator()）。拥有这样的运算子后，我们就可以在仿函数的对象后面加上一对小括号，以此调用仿函数所定义的operator()。具体如下：<br></p><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;functional&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{    </span><br><span class="line">    greater&lt;<span class="keyword">int</span>&gt; ig;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; boolalpha &lt;&lt; ig(<span class="number">4</span>, <span class="number">6</span>); </span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; greater&lt;<span class="keyword">int</span>&gt;()(<span class="number">6</span>, <span class="number">4</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>其中第一种用法比较为大家所熟悉，greater<int> ig的意思是产生一个名为ig的对象，ig(4, 6)则是调用其operator()，并给予两个参数4和6。第二种用法中的greater<int>() 意思是产生一个临时（无名的）对象，之后的(6, 4)才是指定两个参数6,5。上述第二种语法在一般情况下不常见，但是对仿函数而言，却是主流用法。（STL中的仿函数绝大部分采用这种用法）</int></int></p>
+<h2 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h2><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;functional&gt;</span></span></span><br></pre></td></tr></tbody></table></figure>
+<p>任何应用程序欲使用STL内建的仿函数，都必须含入<functional>头文件，SGI则将它们实际定义于&lt;stl_function.h&gt;文件中。</functional></p>
+<h2 id="STL仿函数的分类"><a href="#STL仿函数的分类" class="headerlink" title="STL仿函数的分类"></a>STL仿函数的分类</h2><ul>
+<li>若以操作数的个数划分，可分为一元和二元仿函数；</li>
+<li>若以功能划分，可分为算术运算、关系运算、逻辑运算三大类。</li>
+</ul>
+<h2 id="自定义仿函数"><a href="#自定义仿函数" class="headerlink" title="自定义仿函数"></a>自定义仿函数</h2><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> </span></span><br><span class="line"><span class="class">{</span>   </span><br><span class="line">    <span class="keyword">int</span> a,b;</span><br><span class="line">    <span class="keyword">char</span> s;</span><br><span class="line">} newtype;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">compare</span> </span></span><br><span class="line"><span class="class">{</span>    </span><br><span class="line">    <span class="comment">//重载()    </span></span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">operator</span><span class="params">()</span><span class="params">(<span class="keyword">const</span> newtype &amp;a, <span class="keyword">const</span> newtype &amp;b)</span> <span class="keyword">const</span>    </span></span><br><span class="line"><span class="function">    </span>{        </span><br><span class="line">      <span class="keyword">return</span> a.s&lt;b.s;    </span><br><span class="line">    }</span><br><span class="line">};</span><br><span class="line">newtype obj1, obj2;</span><br><span class="line"><span class="comment">//方式1</span></span><br><span class="line">compare comp;</span><br><span class="line">comp(obj1, obj2);</span><br><span class="line"><span class="comment">//方式2</span></span><br><span class="line">compare()(obj1, obj2);</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="functional头文件中常用的仿函数"><a href="#functional头文件中常用的仿函数" class="headerlink" title="functional头文件中常用的仿函数"></a>functional头文件中常用的仿函数</h2><p>Operator classes are classes that define functional objects that call operators <a href="http://www.cplusplus.com/reference/functional/" target="_blank" rel="noopener">http://www.cplusplus.com/reference/functional/</a></p>
+<style>
+table th:first-of-type {
+    width: 100px;
+}
+</style>
+
+<table>
+<thead>
+<tr>
+<th>函数名</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bit_and</td>
+<td>Bitwise AND function object class (class template )</td>
+</tr>
+<tr>
+<td>bit_or</td>
+<td>Bitwise OR function object class (class template )</td>
+</tr>
+<tr>
+<td>bit_xor</td>
+<td>Bitwise XOR function object class (class template )</td>
+</tr>
+<tr>
+<td>divides</td>
+<td>Division function object class (class template )</td>
+</tr>
+<tr>
+<td>equal_to</td>
+<td>Function object class for equality comparison (class template )</td>
+</tr>
+<tr>
+<td>greater</td>
+<td>Function object class for greater-than inequality comparison (class template, e.g. greater<int>())</int></td>
+</tr>
+<tr>
+<td>greater_equal</td>
+<td>Function object class for greater-than-or-equal-to comparison (class template )</td>
+</tr>
+<tr>
+<td>less</td>
+<td>Function object class for less-than inequality comparison (class template, e.g. less<int>())</int></td>
+</tr>
+<tr>
+<td>less_equal</td>
+<td>Function object class for less-than-or-equal-to comparison (class template )</td>
+</tr>
+<tr>
+<td>logical_and</td>
+<td>Logical AND function object class (class template )</td>
+</tr>
+<tr>
+<td>logical_not</td>
+<td>Logical NOT function object class (class template )</td>
+</tr>
+<tr>
+<td>logical_or</td>
+<td>Logical OR function object class (class template )</td>
+</tr>
+<tr>
+<td>minus</td>
+<td>Subtraction function object class (class template )</td>
+</tr>
+<tr>
+<td>modulus</td>
+<td>Modulus function object class (class template )</td>
+</tr>
+<tr>
+<td>multiplies</td>
+<td>Multiplication function object class (class template )</td>
+</tr>
+<tr>
+<td>negate</td>
+<td>Negative function object class (class template )</td>
+</tr>
+<tr>
+<td>not_equal_to</td>
+<td>Function object class for non-equality comparison (class template )</td>
+</tr>
+<tr>
+<td>plus</td>
+<td>Addition function object class (class template )</td>
+</tr>
+</tbody>
+</table>
+<h3 id="算数操作符"><a href="#算数操作符" class="headerlink" title="算数操作符"></a>算数操作符</h3><pre><code>plus         加法函数对象，等价于 x + y
+minus        减法函数对象，等价于 x - y
+multiplies   乘法函数对象，等价于 x * y
+divides      除法函数对象，等价于 x / y
+modulus      取模函数对象，等价于 x % y
+negate       取相反数函数对象，等价于 -x
+</code></pre><h3 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h3><pre><code>equal_to        函数对象，等价于 x == y
+not_equal_to    函数对象，等价于 x != y
+greater         函数对象，等价于 x &gt; y
+less            函数对象，等价于 x &lt; y
+greater_equal   函数对象，等价于 x &gt;= y
+less_equal      函数对象，等价于 x &lt;= y
+</code></pre><h3 id="逻辑操作"><a href="#逻辑操作" class="headerlink" title="逻辑操作"></a>逻辑操作</h3><pre><code>logical_and    函数对象，等价于 x &amp;&amp; y
+logical_or     函数对象，等价于 x || y
+logical_not    函数对象，等价于 !x按位操作
+bit_and        函数对象，等价于 x &amp; y
+bit_or         函数对象，等价于 x | y
+bit_xor        函数对象，等价于 x ^ y
+</code></pre><h3 id="否认操作"><a href="#否认操作" class="headerlink" title="否认操作"></a>否认操作</h3><pre><code>unary_negate    封装函数对象，返回一元谓词（Unary predicate）所表示范围的补（Complement）
+binary_negate   封装函数对象，返回二元谓词所表示范围的补
+not1            构造自定义 unary_negate 对象
+not2            构造自定义 binary_negate 对象
+</code></pre>
+      
+    </div>
+    
+    
+    
+    
+    
+      <div>
+        <div>
+    <div style="text-align:center;color: #f0ad4e;font-size:14px; margin-top: 20px">
+        -------------本文结束 <i class="fa fa-paw"></i> 感谢您的阅读-------------
+    </div>
+</div>
+      </div>
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得写得还不错就请支持我吧！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="刘韬 WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    刘韬
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://liuxiutao.github.io/2019/05/STL仿函数/" title="STL仿函数">https://liuxiutao.github.io/2019/05/STL仿函数/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a class="post-tag" href="/tags/C/" rel="tag">
+              <div class="post-tag-name">C++</div>
+              <div class="triangle"></div>
+            </a>
+          
+            <a class="post-tag" href="/tags/STL/" rel="tag">
+              <div class="post-tag-name">STL</div>
+              <div class="triangle"></div>
+            </a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/STL迭代器/" rel="next" title="STL迭代器">
+                <i class="fa fa-chevron-left"></i> STL迭代器
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/STL映射与多重映射/" rel="prev" title="STL映射与多重映射">
+                STL映射与多重映射 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
             </div>
@@ -3837,6 +4171,10 @@ i.fa.fa-heart {
 
 
             
+  <div class="comments" id="comments">
+    
+  </div>
+
 
           </div>
           
@@ -3857,8 +4195,17 @@ i.fa.fa-heart {
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="刘韬">
           <p class="site-author-name" itemprop="name">刘韬</p>
@@ -3963,6 +4310,22 @@ i.fa.fa-heart {
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#头文件"><span class="nav-number">2.</span> <span class="nav-text">头文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#STL仿函数的分类"><span class="nav-number">3.</span> <span class="nav-text">STL仿函数的分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义仿函数"><span class="nav-number">4.</span> <span class="nav-text">自定义仿函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#functional头文件中常用的仿函数"><span class="nav-number">5.</span> <span class="nav-text">functional头文件中常用的仿函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#算数操作符"><span class="nav-number">5.1.</span> <span class="nav-text">算数操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#比较"><span class="nav-number">5.2.</span> <span class="nav-text">比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑操作"><span class="nav-number">5.3.</span> <span class="nav-text">逻辑操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#否认操作"><span class="nav-number">5.4.</span> <span class="nav-text">否认操作</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -4100,10 +4463,10 @@ i.fa.fa-heart {
 
 
   
-    
-
-
   
+
+
+
 
   
 
