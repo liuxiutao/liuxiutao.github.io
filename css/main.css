@@ -1930,7 +1930,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e3cd93;
+  background: #f1beff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3274,6 +3274,27 @@ body {
 }
 .post:last-child {
   margin-bottom: 0px;
+}
+.pagination {
+  margin: 40px 0 30px;
+  background-color: rgba(255,255,255,0.8);
+  border-bottom: 1px solid #eee;
+}
+.pagination .prev,
+.pagination .next,
+.pagination .page-number {
+  border-bottom: 0;
+  border-top: 0;
+  margin-top: 2px;
+}
+.pagination .prev:hover,
+.pagination .next:hover,
+.pagination .page-number:hover {
+  background: #fff;
+}
+.pagination .page-number.current {
+  color: #fc6423;
+  background: none;
 }
 .post-body p a {
   color: #0593d3;
