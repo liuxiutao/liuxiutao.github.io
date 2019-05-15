@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liuxiutao.github.io/"/>
-  <updated>2019-05-13T13:55:47.724Z</updated>
+  <updated>2019-05-15T05:43:55.696Z</updated>
   <id>https://liuxiutao.github.io/</id>
   
   <author>
@@ -17,11 +17,61 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>页面置换算法</title>
+    <link href="https://liuxiutao.github.io/2019/05/%E9%A1%B5%E9%9D%A2%E7%BD%AE%E6%8D%A2%E7%AE%97%E6%B3%95/"/>
+    <id>https://liuxiutao.github.io/2019/05/页面置换算法/</id>
+    <published>2019-05-15T05:36:44.000Z</published>
+    <updated>2019-05-15T05:43:55.696Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;最佳置换算法（Optimal）&quot;&gt;&lt;a href=&quot;#最佳置换算法（Optimal）&quot; class=&quot;headerlink&quot; title=&quot;最佳置换算法（Optimal）&quot;&gt;&lt;/a&gt;最佳置换算法（Optimal）&lt;/h2&gt;&lt;p&gt;从内存中移除永远都不再需要的页面或者
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="https://liuxiutao.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="CS知识体系" scheme="https://liuxiutao.github.io/tags/CS%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/"/>
+    
+      <category term="操作系统" scheme="https://liuxiutao.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>进程通信与线程通信</title>
+    <link href="https://liuxiutao.github.io/2019/05/%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1%E4%B8%8E%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1/"/>
+    <id>https://liuxiutao.github.io/2019/05/进程通信与线程通信/</id>
+    <published>2019-05-14T05:51:36.000Z</published>
+    <updated>2019-05-15T05:35:26.126Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;进程通信&quot;&gt;&lt;a href=&quot;#进程通信&quot; class=&quot;headerlink&quot; title=&quot;进程通信&quot;&gt;&lt;/a&gt;进程通信&lt;/h2&gt;&lt;h3 id=&quot;通信方式&quot;&gt;&lt;a href=&quot;#通信方式&quot; class=&quot;headerlink&quot; title=&quot;通信方式&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="https://liuxiutao.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="CS知识体系" scheme="https://liuxiutao.github.io/tags/CS%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/"/>
+    
+      <category term="操作系统" scheme="https://liuxiutao.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>STL string类型</title>
     <link href="https://liuxiutao.github.io/2019/05/STL-string%E7%B1%BB%E5%9E%8B/"/>
     <id>https://liuxiutao.github.io/2019/05/STL-string类型/</id>
     <published>2019-05-13T12:37:21.000Z</published>
-    <updated>2019-05-13T13:55:47.724Z</updated>
+    <updated>2019-05-15T05:18:12.176Z</updated>
     
     <summary type="html">
     
@@ -71,7 +121,7 @@
     <link href="https://liuxiutao.github.io/2019/05/STL%E4%BB%BF%E5%87%BD%E6%95%B0/"/>
     <id>https://liuxiutao.github.io/2019/05/STL仿函数/</id>
     <published>2019-05-13T12:36:20.000Z</published>
-    <updated>2019-05-13T13:13:02.037Z</updated>
+    <updated>2019-05-15T05:18:26.535Z</updated>
     
     <summary type="html">
     
@@ -96,7 +146,7 @@
     <link href="https://liuxiutao.github.io/2019/05/STL%E8%BF%AD%E4%BB%A3%E5%99%A8/"/>
     <id>https://liuxiutao.github.io/2019/05/STL迭代器/</id>
     <published>2019-05-13T07:57:40.000Z</published>
-    <updated>2019-05-13T13:15:34.721Z</updated>
+    <updated>2019-05-15T05:19:15.203Z</updated>
     
     <summary type="html">
     
