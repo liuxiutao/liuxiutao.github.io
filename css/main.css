@@ -196,7 +196,7 @@ body {
     padding-right: 0 !important;
   }
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   body {
     padding-right: 0 !important;
   }
@@ -636,7 +636,7 @@ pre .javascript .function {
   width: auto;
   margin: 20px auto;
 }
-@media (min-width: 800px) {
+@media (min-width: 801px) {
   .full-image.full-image.full-image {
     max-width: none;
     width: 118%;
@@ -1008,14 +1008,14 @@ pre .javascript .function {
   background: #ccc;
   border-top-color: #ccc;
 }
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .pagination {
     border-top: none;
   }
   .pagination .prev,
   .pagination .next,
   .pagination .page-number {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     border-top: 0;
     border-bottom: 1px solid #eee;
   }
@@ -1055,7 +1055,7 @@ pre .javascript .function {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .back-to-top {
     display: none !important;
   }
@@ -1153,12 +1153,12 @@ pre .javascript .function {
     border-top: 1px solid #ddd;
   }
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .site-nav {
     display: block !important;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 801px) {
   .site-nav {
     display: block !important;
   }
@@ -1251,7 +1251,7 @@ pre .javascript .function {
     padding-right: 10px;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 801px) {
   .posts-expand .post-body {
     text-align: justify;
   }
@@ -1300,7 +1300,7 @@ pre .javascript .function {
 .posts-expand .fancybox img {
   margin: 0 auto;
 }
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .posts-collapse {
     margin: 0 20px;
   }
@@ -1494,7 +1494,7 @@ pre .javascript .function {
 .post-meta-item-icon {
   margin-right: 3px;
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .post-meta-item-icon {
     display: inline-block;
   }
@@ -1504,7 +1504,7 @@ pre .javascript .function {
     display: inline-block;
   }
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .post-meta-item-text {
     display: none;
   }
@@ -1788,7 +1788,7 @@ pre .javascript .function {
 .sidebar a:hover {
   color: #eee;
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .sidebar {
     display: none !important;
   }
@@ -1817,7 +1817,7 @@ pre .javascript .function {
   cursor: pointer;
   -webkit-transform: translateZ(0);
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .sidebar-toggle {
     display: none !important;
   }
@@ -1930,7 +1930,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffa2ff;
+  background: #ffa1c2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2452,7 +2452,7 @@ pre .javascript .function {
   transform: translate(-50%, -50%);
   color: #ccc;
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .busuanzi-count {
     width: auto;
   }
@@ -2710,7 +2710,7 @@ pre .javascript .function {
   margin: 0 auto;
   width: 960px;
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .header {
     width: auto;
   }
@@ -2735,7 +2735,7 @@ pre .javascript .function {
     width: 240px;
   }
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .header-inner {
     position: relative;
     width: auto;
@@ -2757,7 +2757,7 @@ pre .javascript .function {
 .main:after {
   clear: both;
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .main {
     padding-bottom: 100px;
   }
@@ -2770,7 +2770,7 @@ pre .javascript .function {
 .container .main-inner {
   width: 960px;
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .container .main-inner {
     width: auto;
   }
@@ -2790,7 +2790,7 @@ pre .javascript .function {
   box-shadow: initial;
   border-radius: initial;
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .content-wrap {
     width: 100%;
     padding: 20px;
@@ -2813,7 +2813,7 @@ pre .javascript .function {
   background: #f5f7f9;
   box-shadow: none;
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .sidebar {
     display: none;
   }
@@ -2830,7 +2830,7 @@ pre .javascript .function {
   width: 960px;
   padding-left: 260px;
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .footer-inner {
     width: auto;
     padding-left: 0 !important;
@@ -2865,7 +2865,7 @@ pre .javascript .function {
   color: #fff;
   background: #222;
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .site-meta {
     box-shadow: 0 0 16px rgba(0,0,0,0.5);
   }
@@ -2892,12 +2892,12 @@ pre .javascript .function {
 .site-nav {
   border-top: none;
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .site-nav {
     display: none !important;
   }
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .site-nav-on {
     display: block !important;
   }
@@ -2949,7 +2949,7 @@ pre .javascript .function {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 800px) {
   .site-nav-toggle {
     display: block;
   }
@@ -3286,6 +3286,7 @@ body {
   border-bottom: 0;
   border-top: 0;
   margin-top: 2px;
+  margin-bottom: 0;
 }
 .pagination .prev:hover,
 .pagination .next:hover,
