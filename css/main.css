@@ -1930,7 +1930,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffa1c2;
+  background: #951bc6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3276,9 +3276,18 @@ body {
   margin-bottom: 0px;
 }
 .pagination {
-  margin: 40px 0 30px;
   background-color: rgba(255,255,255,0.8);
   border-bottom: 1px solid #eee;
+}
+@media (min-width: 801px) {
+  .pagination {
+    margin: 40px 0 30px;
+  }
+}
+@media (max-width: 800px) {
+  .pagination {
+    margin: 15px 0 0px;
+  }
 }
 .pagination .prev,
 .pagination .next,
