@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liuxiutao.github.io/"/>
-  <updated>2019-05-15T05:43:55.696Z</updated>
+  <updated>2019-05-23T06:30:13.690Z</updated>
   <id>https://liuxiutao.github.io/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++输入输出控制</title>
+    <link href="https://liuxiutao.github.io/2019/05/C-%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%8E%A7%E5%88%B6/"/>
+    <id>https://liuxiutao.github.io/2019/05/C-输入输出控制/</id>
+    <published>2019-05-22T08:31:34.000Z</published>
+    <updated>2019-05-23T06:30:13.690Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;按行输入&quot;&gt;&lt;a href=&quot;#按行输入&quot; class=&quot;headerlink&quot; title=&quot;按行输入&quot;&gt;&lt;/a&gt;按行输入&lt;/h2&gt;&lt;p&gt;尽量使用全局函数string类中的getline（），其读入的第二个参数为string类型，不设置默认是遇到回车停止读入操作
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="https://liuxiutao.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="C++" scheme="https://liuxiutao.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++智能指针</title>
+    <link href="https://liuxiutao.github.io/2019/05/C-%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88/"/>
+    <id>https://liuxiutao.github.io/2019/05/C-智能指针/</id>
+    <published>2019-05-22T08:14:05.000Z</published>
+    <updated>2019-05-22T08:43:55.562Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;C++ 11 中新增加了三种智能指针，用于动态内存分配与回收。&lt;/p&gt;
+&lt;h2 id=&quot;头文件：&quot;&gt;&lt;a href=&quot;#头文件：&quot; class=&quot;headerlink&quot; title=&quot;头文件：&quot;&gt;&lt;/a&gt;头文件：&lt;/h2&gt;&lt;figure class=&quot;highlight c
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="https://liuxiutao.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="C++" scheme="https://liuxiutao.github.io/tags/C/"/>
+    
+      <category term="智能指针" scheme="https://liuxiutao.github.io/tags/%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88/"/>
+    
+  </entry>
   
   <entry>
     <title>页面置换算法</title>
@@ -71,7 +120,7 @@
     <link href="https://liuxiutao.github.io/2019/05/STL-string%E7%B1%BB%E5%9E%8B/"/>
     <id>https://liuxiutao.github.io/2019/05/STL-string类型/</id>
     <published>2019-05-13T12:37:21.000Z</published>
-    <updated>2019-05-15T05:18:12.176Z</updated>
+    <updated>2019-05-23T06:49:59.175Z</updated>
     
     <summary type="html">
     
@@ -296,7 +345,7 @@
     <link href="https://liuxiutao.github.io/2019/05/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>https://liuxiutao.github.io/2019/05/Git常用命令/</id>
     <published>2019-05-05T08:16:28.000Z</published>
-    <updated>2019-05-13T13:13:57.993Z</updated>
+    <updated>2019-05-22T08:28:46.255Z</updated>
     
     <summary type="html">
     
